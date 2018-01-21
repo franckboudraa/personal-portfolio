@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Container } from 'reactstrap';
+import axios from 'axios';
+
 import ContactForm from './ContactForm';
 
 export default class Contact extends Component {
@@ -10,20 +12,24 @@ export default class Contact extends Component {
     this.sendForm = this.sendForm.bind(this);
   }
 
-  sendForm(emailFrom, message){
-    const formHeaders = new Headers();
-    formHeaders.append("Content-Type", "application/json");
-    /*const data = {
-      message : message
-    };*/
-    fetch('https://formspree.io/franckboudraa@gmail.com', { method: 'POST', headers: formHeaders, mode: 'no-cors', data: message})
-      .then(function(response) {
-        console.log(response);
-      });
-    console.log('sendForm called');
-    console.log(emailFrom);
-    console.log(message);
-}
+  async sendForm(emailFrom, message) {
+    try {
+      const submitForm = await axios.post(
+        'https://formspree.io/franckboudraa@gmail.com',
+        {
+          data: {
+            name: emailFrom,
+            email: emailFrom,
+            message: message,
+          },
+        },
+      );
+
+      console.log(submitForm);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   render() {
     return (

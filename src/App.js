@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 
-import './css/App.css';
-
 import Header from './layouts/Header';
+import Footer from './layouts/Footer';
+
 import Homepage from './Homepage';
 import About from './About';
 import Contact from './Contact';
@@ -22,6 +22,7 @@ class App extends Component {
           <Route path="/projects/brklyn" render={()=><ProjectShow project="brklyn" />} />
           <Route exact path="/" component={Homepage} />
         </div>
+        <Footer/>
       </div>
     );
   }
