@@ -393,6 +393,20 @@ export default class Homepage extends Component {
                   <li><FontAwesomeIcon icon={faCheck} /> UI development</li>
                   <li><FontAwesomeIcon icon={faCheck} /> UX prototyping</li>
                 </ul>
+                <ul className="list-unstyled service-list">
+                  <li><FontAwesomeIcon icon={faCheck} /> App development with ReactJS</li>
+                  <li><FontAwesomeIcon icon={faCheck} /> Front-end development with AngularJS</li>
+                  <li><FontAwesomeIcon icon={faCheck} /> Back-end development with Django/Python</li>
+                  <li><FontAwesomeIcon icon={faCheck} /> UI development</li>
+                  <li><FontAwesomeIcon icon={faCheck} /> UX prototyping</li>
+                </ul>
+                <ul className="list-unstyled service-list">
+                  <li><FontAwesomeIcon icon={faCheck} /> App development with ReactJS</li>
+                  <li><FontAwesomeIcon icon={faCheck} /> Front-end development with AngularJS</li>
+                  <li><FontAwesomeIcon icon={faCheck} /> Back-end development with Django/Python</li>
+                  <li><FontAwesomeIcon icon={faCheck} /> UI development</li>
+                  <li><FontAwesomeIcon icon={faCheck} /> UX prototyping</li>
+                </ul>
                 <p>Drop me a line at <a href="mailto:someone@example.com">james.doe@website.com</a> or call me at <a href="tel:01234567890">0123 456 7890</a></p>
                 <ul className="social list-inline">
                   <li className="list-inline-item">

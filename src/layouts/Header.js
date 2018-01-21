@@ -86,7 +86,7 @@ export default class Header extends Component {
               className="btn d-none d-md-inline-block"
               href="mailto:someone@example.com"
             >
-              <FontAwesomeIcon icon={faPaperPlane} /> Hire Me
+              <FontAwesomeIcon icon={faPaperPlane} style={{marginRight:'5px'}} /> Contact me
             </a>
           </div>
           <ul className="social list-inline">
@@ -139,6 +139,17 @@ export default class Header extends Component {
             </div>
           </div>
         </div>
+
+        <div class="contact-info">
+          <div class="container text-center">
+            <ul class="list-inline">
+              <li class="email list-inline-item"><i class="fa fa-envelope"></i><a href="mailto:someone@example.com">james.doe@website.com</a></li>
+              <li class="list-inline-item"><i class="fa fa-phone"></i> <a href="tel: 0123456789">0123 456 7890</a></li>
+              <li class="website list-inline-item"><i class="fa fa-globe"></i><a href="#" target="_blank">portfoliosite.com</a></li>
+            </ul>
+          </div>
+        </div>
+
         <Sticky enabled={true} innerZ={1000}>
           <div className="page-nav-space-holder d-none d-md-block">
             <div id="page-nav-wrapper" className="page-nav-wrapper text-center">
