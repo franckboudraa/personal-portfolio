@@ -1,5 +1,19 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { RRLink } from 'react-router-dom';
+
+import * as Scroll from 'react-scroll';
+import {
+  Link,
+  DirectLink,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from 'react-scroll';
+
+import Sticky from 'react-stickynode';
+
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/fontawesome-free-solid';
 import {
@@ -12,22 +26,57 @@ import {
 import '../css/styles.css';
 import pic from '../img/pic.jpg';
 
-/* navbar-dark bg-primary */
 
 export default class Header extends Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false,
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen,
+  componentDidMount = () => {
+    Events.scrollEvent.register('begin', function(to, element) {
+      console.log('begin', arguments);
     });
-  }
+
+    Events.scrollEvent.register('end', function(to, element) {
+      console.log('end', arguments);
+    });
+
+    scrollSpy.update();
+  };
+
+  componentWillUnmount = () => {
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
+  };
+  scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+  scrollToBottom = () => {
+    scroll.scrollToBottom();
+  };
+  scrollTo = () => {
+    scroll.scrollTo(100);
+  };
+  scrollMore = () => {
+    scroll.scrollMore(100);
+  };
+  handleSetActive = to => {
+    console.log(to);
+  };
+
+  renderLink = (section, text) => {
+    return (
+      <Link
+        activeClass="active"
+        className="nav-link"
+        to={section}
+        spy={true}
+        smooth={true}
+        offset={-50}
+        duration={1000}
+        onSetActive={this.handleSetActive}
+      >
+        {text}
+      </Link>
+    );
+  };
+
   render() {
     return (
       <header className="header">
@@ -42,7 +91,11 @@ export default class Header extends Component {
           </div>
           <ul className="social list-inline">
             <li className="list-inline-item">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" >
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
             </li>
@@ -86,45 +139,31 @@ export default class Header extends Component {
             </div>
           </div>
         </div>
-
-        <div className="page-nav-space-holder d-none d-md-block">
-          <div id="page-nav-wrapper" className="page-nav-wrapper text-center">
-            <div className="container">
-              <ul id="page-nav" className="nav page-nav list-inline">
-                <li className="nav-item">
-                  <a className="scrollto nav-link" href="#experiences-section">
-                    Experiences
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="scrollto nav-link" href="#education-section">
-                    Education
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="scrollto nav-link" href="#skills-section">
-                    Skills
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="scrollto nav-link" href="#testimonials-section">
-                    Testimonials
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="scrollto nav-link" href="#portfolio-section">
-                    Portfolio
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="scrollto nav-link" href="#contact-section">
-                    Contact
-                  </a>
-                </li>
-              </ul>
+        <Sticky enabled={true} innerZ={1000}>
+          <div className="page-nav-space-holder d-none d-md-block">
+            <div id="page-nav-wrapper" className="page-nav-wrapper text-center">
+              <div className="container">
+                <ul id="page-nav" className="nav page-nav list-inline">
+                  <li className="nav-item">
+                    {this.renderLink('experiences-section', 'Experiences')}
+                  </li>
+                  <li className="nav-item">
+                    {this.renderLink('education-section', 'Education')}
+                  </li>
+                  <li className="nav-item">
+                    {this.renderLink('skills-section', 'Skills')}
+                  </li>
+                  <li className="nav-item">
+                    {this.renderLink('portfolio-section', 'Portfolio')}
+                  </li>
+                  <li className="nav-item">
+                    {this.renderLink("contact-section", "Contact")}
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
+        </Sticky>
       </header>
     );
   }

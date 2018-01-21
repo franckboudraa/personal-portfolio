@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/fontawesome-free-solid';
@@ -84,7 +83,6 @@ export default class Homepage extends Component {
   };
 
   render() {
-    const { renderTechStack } = this;
     return (
       <div className="wrapper container">
         <section id="experiences-section" className="experiences-section section">
