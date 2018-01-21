@@ -17,10 +17,7 @@ class App extends Component {
       <div>
         <Header />
         <div>
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/projects/brklyn" render={()=><ProjectShow project="brklyn" />} />
-          <Route exact path="/" component={Homepage} />
+          <Route path="/" component={Homepage} />
         </div>
         <Footer/>
       </div>

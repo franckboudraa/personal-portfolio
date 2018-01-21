@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { RRLink } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
+import LinksList from './LinksList';
 
 import * as Scroll from 'react-scroll';
 import {
@@ -26,24 +27,29 @@ import {
 import '../css/styles.css';
 import pic from '../img/pic.jpg';
 
-
-export default class Header extends Component {
+class Header extends Component {
   componentDidMount = () => {
-    Events.scrollEvent.register('begin', function(to, element) {
-      console.log('begin', arguments);
-    });
-
-    Events.scrollEvent.register('end', function(to, element) {
-      console.log('end', arguments);
-    });
+    console.log('test'.toLocaleUpperCase());
+    switch(this.props.history.location.pathname){
+      case '/education':
+        return this.changeUrlTo('education');
+      case '/experiences':
+        return this.changeUrlTo('experiences');
+      case '/contact':
+        return this.changeUrlTo('contact');
+    }
 
     scrollSpy.update();
   };
 
-  componentWillUnmount = () => {
-    Events.scrollEvent.remove('begin');
-    Events.scrollEvent.remove('end');
+  changeUrlTo = (url) => {
+    scroller.scrollTo(url, {
+      duration: 1000,
+      smooth: true,
+      offset: -50,
+    });
   };
+
   scrollToTop = () => {
     scroll.scrollToTop();
   };
@@ -57,10 +63,10 @@ export default class Header extends Component {
     scroll.scrollMore(100);
   };
   handleSetActive = to => {
-    console.log(to);
+    this.props.history.push('/' + to);
   };
 
-  renderLink = (section, text) => {
+  renderLink = (section) => {
     return (
       <Link
         activeClass="active"
@@ -72,7 +78,7 @@ export default class Header extends Component {
         duration={1000}
         onSetActive={this.handleSetActive}
       >
-        {text}
+        {section}
       </Link>
     );
   };
@@ -82,12 +88,21 @@ export default class Header extends Component {
       <header className="header">
         <div className="top-bar container-fluid">
           <div className="actions">
-            <a
-              className="btn d-none d-md-inline-block"
-              href="mailto:someone@example.com"
+            <Link
+              className="nav-link btn d-none d-md-inline-block"
+              to="contact"
+              spy={false}
+              smooth={true}
+              offset={-50}
+              duration={1000}
+              onSetActive={this.handleSetActive}
             >
-              <FontAwesomeIcon icon={faPaperPlane} style={{marginRight:'5px'}} /> Contact me
-            </a>
+              <FontAwesomeIcon
+                icon={faPaperPlane}
+                style={{ marginRight: '5px' }}
+              />{' '}
+              Contact me
+            </Link>
           </div>
           <ul className="social list-inline">
             <li className="list-inline-item">
@@ -140,37 +155,11 @@ export default class Header extends Component {
           </div>
         </div>
 
-        <div class="contact-info">
-          <div class="container text-center">
-            <ul class="list-inline">
-              <li class="email list-inline-item"><i class="fa fa-envelope"></i><a href="mailto:someone@example.com">james.doe@website.com</a></li>
-              <li class="list-inline-item"><i class="fa fa-phone"></i> <a href="tel: 0123456789">0123 456 7890</a></li>
-              <li class="website list-inline-item"><i class="fa fa-globe"></i><a href="#" target="_blank">portfoliosite.com</a></li>
-            </ul>
-          </div>
-        </div>
-
         <Sticky enabled={true} innerZ={1000}>
           <div className="page-nav-space-holder d-none d-md-block">
             <div id="page-nav-wrapper" className="page-nav-wrapper text-center">
               <div className="container">
-                <ul id="page-nav" className="nav page-nav list-inline">
-                  <li className="nav-item">
-                    {this.renderLink('experiences-section', 'Experiences')}
-                  </li>
-                  <li className="nav-item">
-                    {this.renderLink('education-section', 'Education')}
-                  </li>
-                  <li className="nav-item">
-                    {this.renderLink('skills-section', 'Skills')}
-                  </li>
-                  <li className="nav-item">
-                    {this.renderLink('portfolio-section', 'Portfolio')}
-                  </li>
-                  <li className="nav-item">
-                    {this.renderLink("contact-section", "Contact")}
-                  </li>
-                </ul>
+                <LinksList />
               </div>
             </div>
           </div>
@@ -179,3 +168,5 @@ export default class Header extends Component {
     );
   }
 }
+
+export default withRouter(Header);

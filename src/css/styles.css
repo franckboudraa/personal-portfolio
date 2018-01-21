@@ -771,3 +771,10 @@ a.btn:hover {
     margin: 0 auto;
   }
 }
+a {
+  cursor: pointer;
+}
+
+.nav-link{
+  text-transform:capitalize;
+}

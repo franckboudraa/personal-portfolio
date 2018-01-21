@@ -85,7 +85,7 @@ export default class Homepage extends Component {
   render() {
     return (
       <div className="wrapper container">
-        <section id="experiences-section" className="experiences-section section">
+        <section id="experiences" className="experiences-section section">
           <h2 className="section-title">Work Experiences</h2>
           <div className="timeline">
             <div className="item">
@@ -153,7 +153,7 @@ export default class Homepage extends Component {
 
         </section>
 
-        <section id="education-section" className="education-section section">
+        <section id="education" className="education-section section">
           <h2 className="section-title">Education</h2>
           <div className="row">
             <div className="item col-12 col-md-4">
@@ -197,7 +197,7 @@ export default class Homepage extends Component {
         </section>
 
 
-        <section id="skills-section" className="skills-section section text-center">
+        <section id="skills" className="skills-section section text-center">
           <h2 className="section-title">Professional Skills</h2>
           <div className="top-skills">
             <h3 className="subtitle">Top Skills</h3>
@@ -260,7 +260,7 @@ export default class Homepage extends Component {
 
         </section>
 
-        <section id="portfolio-section" className="portfolio-section section">
+        <section id="portfolio" className="portfolio-section section">
           <h2 className="section-title">Portfolio</h2>
           <ul id="filters" className="filters clearfix">
             <li className="type active" data-filter="*">All</li>
@@ -379,7 +379,7 @@ export default class Homepage extends Component {
 
         </section>
 
-        <section id="contact-section" className="contact-section section">
+        <section id="contact" className="contact-section section">
           <h2 className="section-title">Get in Touch</h2>
           <div className="intro">
             <img className="profile-image rounded-circle img-thumbnail" src={pic} alt="" />
