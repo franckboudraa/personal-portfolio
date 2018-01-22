@@ -6,20 +6,20 @@ import brooklyn from '../img/brooklyn2.jpg';
 const items = [
   {
     name: 'Brooklyn Outdoor Film Festival',
-    context: 'OC Full Stack Developer Path',
+    context: 'Mockup website for OC Full Stack Developer Path',
     githubUrl: 'https://github.com/franckboudraa/oc-brooklyn-festival',
     projectUrl: 'http://www.franckboudraa.me/oc-brooklyn-festival',
-    stack: ['HTML5 & CSS3', 'Bootstrap 4', 'jQuery', 'Google Maps API'],
-    description: 'Simple mockup website',
+    stack: ['HTML5, CSS3', 'Bootstrap 4', 'jQuery', 'Google Maps API'],
+    description: '',
     image: brooklyn,
   },
   {
     name: 'Personal Portfolio',
-    context: 'OC Full Stack Developer Path',
+    context: 'Single Page App',
     githubUrl: 'https://github.com/franckboudraa/personal-portfolio',
     projectUrl: 'http://www.franckboudraa.me',
     stack: ['HTML5, CSS3 & ES6', 'Bootstrap 4', 'React', 'Redux',],
-    description: 'Single page app portfolio in React',
+    description: '',
     image: brooklyn,
   },
 ];

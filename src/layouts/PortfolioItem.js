@@ -13,9 +13,9 @@ class PortfolioItem extends Component {
       description,
     } = this.props;
 
-    const renderStack = stack.map(item => {
+    /*const renderStack = stack.map(item => {
       return <li key={item}>{item}</li>
-    });
+    });*/
 
     return (
       <div className="item col-lg-4 col-6">
@@ -30,18 +30,9 @@ class PortfolioItem extends Component {
             <div className="meta">{context}</div>
             <div className="portfolio-body mt-3 mb-1">
               {description}
-              <ul>
-                {renderStack}
-              </ul>
+                {stack.join(', ')}
               </div>
-            <div className="action">
-              <a href={githubUrl} target="_blank" rel="noreferrer noopener" className="btn mr-1">
-                View on Github
-              </a>
-              <a href={projectUrl} target="_blank" rel="noreferrer noopener" className="btn">
-                Preview
-              </a>
-            </div>
+
           </div>
         </div>
       </div>

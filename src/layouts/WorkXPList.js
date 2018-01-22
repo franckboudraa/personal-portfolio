@@ -14,6 +14,30 @@ const works = [
             <li>Maecenas tempus tellus eget </li>
           </ul>`,
   },
+    {
+        place: 'Udemy',
+        location: 'Remote',
+        title: 'Specific courses',
+        timeline: '2017 - Present',
+        description: `<p>Followed multiple courses by Stephen Grider:</p>
+          <ul>
+            <li>Modern React & Redux</li>
+            <li>Node Fullstack (NodeJS, Express, React, MongoDB)</li>
+            <li>Meteor Fullstack with React and MongoDB</li>
+          </ul>`,
+    },
+    {
+        place: 'Rails courses',
+        location: 'Remote',
+        title: 'Autodidact',
+        timeline: '2017',
+        description: `<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Donec pede justo ante</li>
+            <li>Maecenas tempus tellus eget </li>
+          </ul>`,
+    },
   {
     place: '',
     location: 'Paris',

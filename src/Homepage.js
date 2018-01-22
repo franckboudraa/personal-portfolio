@@ -108,7 +108,7 @@ export default class Homepage extends Component {
             <SkillsTags />
           </div>
           <div className="other-skills">
-            <h3 className="subtitle">Languages</h3>
+            <h3 className="subtitle mt-5">Languages</h3>
             <span className="skill-tag">
               French
             </span>
