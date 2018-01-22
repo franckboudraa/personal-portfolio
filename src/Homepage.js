@@ -2,12 +2,6 @@ import React, { Component } from 'react';
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/fontawesome-free-solid';
-import {
-  faLinkedinIn,
-  faGithub,
-  faStackOverflow,
-  faTwitter,
-} from '@fortawesome/fontawesome-free-brands';
 
 import reactImg from './img/react.png';
 import meteorImg from './img/meteor.png';
@@ -24,6 +18,8 @@ import brooklynImg from './img/brooklyn2.jpg';
 
 import pic from './img/pic.jpg';
 import SocialLinks from "./layouts/SocialLinks";
+import WorkXPList from "./layouts/WorkXPList";
+import EducationList from "./layouts/EducationList";
 
 export default class Homepage extends Component {
   constructor(props) {
@@ -89,112 +85,14 @@ export default class Homepage extends Component {
         <section id="experiences" className="experiences-section section">
           <h2 className="section-title">Work Experiences</h2>
           <div className="timeline">
-            <div className="item">
-              <div className="work-place">
-                <h3 className="place">Google</h3>
-                <div className="location"><i className="fa fa-map-marker" aria-hidden="true"></i>Mountain View</div>
-              </div>
-              <div className="job-meta">
-                <div className="title">Senior Software Engineer</div>
-                <div className="time">2016 - Present</div>
-              </div>
-              <div className="job-desc">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-                <ul>
-                  <li>Lorem ipsum dolor sit amet</li>
-                  <li>Donec pede justo ante</li>
-                  <li>Maecenas tempus tellus eget </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="work-place">
-                <h3 className="place">Apple</h3>
-                <div className="location"><i className="fa fa-map-marker" aria-hidden="true"></i>New York</div>
-              </div>
-              <div className="job-meta">
-                <div className="title">Lead Software Engineer</div>
-                <div className="time">2015 - 2016</div>
-              </div>
-              <div className="job-desc">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="work-place">
-                <h3 className="place">Twitter</h3>
-                <div className="location"><i className="fa fa-map-marker" aria-hidden="true"></i>London</div>
-              </div>
-              <div className="job-meta">
-                <div className="title">Software Engineer</div>
-                <div className="time">2013 - 2015</div>
-              </div>
-              <div className="job-desc">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="work-place">
-                <h3 className="place">Startup Hub</h3>
-                <div className="location"><i className="fa fa-map-marker" aria-hidden="true"></i>London</div>
-              </div>
-              <div className="job-meta">
-                <div className="title">Founder &amp; Lead Developer</div>
-                <div className="time">2012 - 2013</div>
-              </div>
-              <div className="job-desc">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-              </div>
-            </div>
-
+            <WorkXPList/>
           </div>
 
         </section>
 
         <section id="education" className="education-section section">
           <h2 className="section-title">Education</h2>
-          <div className="row">
-            <div className="item col-12 col-md-4">
-              <div className="item-inner">
-                <h3 className="degree">MSc Computer Science</h3>
-                <div className="education-body">
-                  University College of London
-                </div>
-                <div className="time">2011 - 2012</div>
-                <div className="desc">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-                </div>
-              </div>
-            </div>
-            <div className="item col-12 col-md-4">
-              <div className="item-inner">
-                <h3 className="degree">MSc Applied Mathematics</h3>
-                <div className="education-body">
-                  University of Bristol
-                </div>
-                <div className="time">2010 - 2011</div>
-                <div className="desc">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-                </div>
-              </div>
-            </div>
-            <div className="item col-12 col-md-4">
-              <div className="item-inner">
-                <h3 className="degree">BSc Creative Technology</h3>
-                <div className="education-body">
-                  University of Bristol
-                </div>
-                <div className="time">2007 - 2010</div>
-                <div className="desc">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-                </div>
-              </div>
-            </div>
-
-          </div>
+            <EducationList/>
         </section>
 
 
@@ -409,7 +307,7 @@ export default class Homepage extends Component {
                   <li><FontAwesomeIcon icon={faCheck} /> UX prototyping</li>
                 </ul>
                 <p>Drop me a line at <a href="mailto:someone@example.com">james.doe@website.com</a> or call me at <a href="tel:01234567890">0123 456 7890</a></p>
-                <SocialLinks/>
+                <SocialLinks keyPrefix="contact" />
               </div>
           </div>
 

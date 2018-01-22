@@ -3,16 +3,20 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import {faGithub, faLinkedinIn, faStackOverflow, faTwitter} from "@fortawesome/fontawesome-free-brands";
 
 const items = [
-  { icon: faLinkedinIn,
+  { key:'li',
+    icon: faLinkedinIn,
     url: 'https://linkedin.com/in/franckboudraa'
   },
-  { icon: faTwitter,
+  { key:'tw',
+    icon: faTwitter,
     url: 'https://twitter.com/neocydfr'
   },
-  { icon: faGithub,
+  { key:'gh',
+    icon: faGithub,
     url: 'https://github.com/franckboudraa'
   },
-  { icon: faStackOverflow,
+  { key:'so',
+    icon: faStackOverflow,
     url: 'https://stackoverflow.com/users/1527134/neocydfr'
   }
 ];
@@ -21,7 +25,7 @@ class SocialLinks extends Component{
   render(){
     const renderItems = items.map(item => {
       return (
-        <li className="list-inline-item" key={item.icon}>
+        <li className="list-inline-item" key={this.props.keyPrefix+item.key}>
           <a href={item.url} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={item.icon}/>
           </a>

@@ -8,7 +8,10 @@ import { Link, scroller } from 'react-scroll';
 import Sticky from 'react-stickynode';
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import { faPaperPlane } from '@fortawesome/fontawesome-free-solid';
+import {
+  faPaperPlane,
+  faMapMarkerAlt
+} from '@fortawesome/fontawesome-free-solid';
 
 import '../css/styles.css';
 import pic from '../img/pic.jpg';
@@ -41,10 +44,6 @@ class Header extends Component {
       offset: -50,
     });
   };
-
-  /*scrollToTop = () => {
-    scroll.scrollToTop();
-  };*/
 
   handleSetActive = to => {
     this.props.setUrl(to);
@@ -80,7 +79,7 @@ class Header extends Component {
               Contact me
             </Link>
           </div>
-          <SocialLinks />
+          <SocialLinks keyPrefix="header" />
         </div>
 
         <div className="intro">
@@ -94,13 +93,12 @@ class Header extends Component {
             <div className="title">Full Stack Developer</div>
             <div className="profile">
               <p>
-                Profile info goes here. Lorem ipsum dolor sit amet, consectetuer
-                adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. Donec quam felis, ultricies nec,
-                pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-                enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
-                eget, arcu. In enim justo, rhoncus ut, imperdiet.
+                Currently following the Full Stack Developer path @
+                OpenClassrooms.
+              </p>
+              <p>
+                Available for hire.<br />
+                <FontAwesomeIcon icon={faMapMarkerAlt} style={{marginRight:'5px'}} /> Paris
               </p>
             </div>
           </div>

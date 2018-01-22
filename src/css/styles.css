@@ -175,7 +175,7 @@ a.btn:hover {
 .header .intro {
   background: #566f7c;
   padding-top: 90px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   position: relative;
   font-size: 16px;
 }
@@ -271,7 +271,7 @@ a.btn:hover {
 }
 .wrapper {
   padding-top: 60px;
-  padding-bottom: 60px;
+  /*padding-bottom: 60px;*/
 }
 .section {
   -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
