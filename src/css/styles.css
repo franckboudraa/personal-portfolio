@@ -8,12 +8,11 @@
 /* ======= Base ======= */
 body {
   font-family: 'Roboto', sans-serif !important;
-  color: #666;
   background: #f5f5f5;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #444;
+  color: #444 !important;
   overflow-x: hidden;
   position: relative;
 }
@@ -26,7 +25,7 @@ h6 {
   font-weight: 500;
 }
 a {
-  color: #00BCD4;
+  color: #00bcd4;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -102,7 +101,7 @@ a.btn:hover {
   font-weight: normal;
 }
 .header {
-  background: #607D8B;
+  background: #607d8b;
   color: #fff;
 }
 .header a {
@@ -230,7 +229,7 @@ a.btn:hover {
   left: 0;
   width: 100%;
   z-index: 100;
-  background: #00BCD4;
+  background: #00bcd4;
 }
 .page-nav-wrapper a {
   color: rgba(255, 255, 255, 0.6);
@@ -299,7 +298,7 @@ a.btn:hover {
   text-align: center;
 }
 .timeline {
-  border-left: 3px solid #607D8B;
+  border-left: 3px solid #607d8b;
   border-bottom-right-radius: 2px;
   border-top-right-radius: 2px;
   position: relative;
@@ -314,7 +313,7 @@ a.btn:hover {
   margin-bottom: 0;
 }
 .timeline .item:before {
-  content: "";
+  content: '';
   position: absolute;
   left: -43px;
   top: 0;
@@ -330,10 +329,10 @@ a.btn:hover {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background: #fff;
-  border: 3px solid #607D8B;
+  border: 3px solid #607d8b;
 }
 .timeline .item:after {
-  content: "";
+  content: '';
   position: absolute;
   left: -37px;
   top: 6px;
@@ -348,7 +347,7 @@ a.btn:hover {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background: #607D8B;
+  background: #607d8b;
   z-index: 10;
 }
 .timeline .work-place {
@@ -376,7 +375,7 @@ a.btn:hover {
 }
 .timeline .job-meta .title {
   font-size: 18px;
-  color: #607D8B;
+  color: #607d8b;
 }
 .timeline .job-meta .time {
   color: #8a8a8a;
@@ -392,7 +391,7 @@ a.btn:hover {
 }
 .education-section .degree {
   font-size: 18px;
-  color: #607D8B;
+  color: #607d8b;
   margin-top: 0;
   margin-bottom: 0px;
 }
@@ -417,7 +416,7 @@ a.btn:hover {
   font-weight: 300;
 }
 .skills-section .top-skills {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 .skills-section .top-skills .item {
   margin-bottom: 45px;
@@ -492,7 +491,7 @@ a.btn:hover {
   width: 36px;
   height: 36px;
   display: inline-block;
-  background: #00BCD4;
+  background: #00bcd4;
   color: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -528,7 +527,7 @@ a.btn:hover {
   cursor: pointer;
 }
 .testimonials-section .carousel-indicators li.active {
-  background-color: #00BCD4;
+  background-color: #00bcd4;
   width: 10px;
   height: 10px;
   margin: 0;
@@ -556,8 +555,8 @@ a.btn:hover {
   margin-right: 0;
 }
 .portfolio-section .filters .type.active {
-  color: #607D8B;
-  border-bottom: 2px solid #607D8B;
+  color: #607d8b;
+  border-bottom: 2px solid #607d8b;
 }
 .portfolio-section .item {
   margin-bottom: 30px;
@@ -566,7 +565,7 @@ a.btn:hover {
   margin-bottom: 0;
 }
 .portfolio-section .item-inner {
-  background: #607D8B;
+  background: #607d8b;
   color: #fff;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -643,7 +642,7 @@ a.btn:hover {
   margin-bottom: 15px;
 }
 .contact-section .service-list .fa {
-  color: #00BCD4;
+  color: #00bcd4;
 }
 .contact-section .social {
   margin-bottom: 0;
@@ -661,7 +660,7 @@ a.btn:hover {
   color: #8a8a8a;
 }
 .contact-section .social a:hover {
-  color: #607D8B;
+  color: #607d8b;
 }
 .footer .container {
   padding: 30px;
@@ -775,6 +774,12 @@ a {
   cursor: pointer;
 }
 
-.nav-link{
-  text-transform:capitalize;
+.nav-link {
+  text-transform: capitalize;
+}
+
+.starred {
+  font-size: 28px;
+  color: #566f7c;
+  margin-bottom: 10px;
 }

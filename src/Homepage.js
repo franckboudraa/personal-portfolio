@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/fontawesome-free-solid';
 
-import {PieChart} from 'react-easy-chart';
-
 import reactImg from './img/react.png';
 import meteorImg from './img/meteor.png';
 import nodeImg from './img/node.png';
@@ -22,6 +20,8 @@ import pic from './img/pic.jpg';
 import SocialLinks from "./layouts/SocialLinks";
 import WorkXPList from "./layouts/WorkXPList";
 import EducationList from "./layouts/EducationList";
+import SkillsList from "./layouts/SkillsList";
+import SkillsTags from "./layouts/SkillsTags";
 
 export default class Homepage extends Component {
   constructor(props) {
@@ -102,76 +102,12 @@ export default class Homepage extends Component {
           <h2 className="section-title">Professional Skills</h2>
           <div className="top-skills">
             <h3 className="subtitle">Top Skills</h3>
-            <div className="row">
-              <div className="item col-12 col-md-4">
-                <div className="item-inner">
-                  <PieChart
-                    size={100}
-                    innerHoleSize={50}
-                    data={[
-                      { key: 'A', value: 100, color: '#566f7c' },
-                      { key: 'B', value: 50, color: '#f5f5f5' }
-                    ]}
-                  />
-                  <h4 className="skill-name">Python &amp; Django</h4>
-                  <div className="level">Expert, 8 years</div>
-                  <div className="desc">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-                  </div>
-                </div>
-              </div>
-              <div className="item col-12 col-md-4">
-                <div className="item-inner">
-                  <PieChart
-                    size={100}
-                    innerHoleSize={50}
-                    data={[
-                      { key: 'C', value: 100, color: '#566f7c' },
-                      { key: 'D', value: 50, color: '#f5f5f5' }
-                    ]}
-                  />
-                  <h4 className="skill-name">JavaScript</h4>
-                  <div className="level">Expert, 8 years</div>
-                  <div className="desc">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-                  </div>
-                </div>
-              </div>
-              <div className="item col-12 col-md-4">
-                <div className="item-inner">
-                  <PieChart
-                    size={100}
-                    innerHoleSize={50}
-                    data={[
-                      { key: 'E', value: 100, color: '#566f7c' },
-                      { key: 'F', value: 50, color: '#f5f5f5' }
-                    ]}
-                  />
-                  <h4 className="skill-name">React &amp; Angular</h4>
-                  <div className="level">Advanced, 4 years</div>
-                  <div className="desc">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-                  </div>
-                </div>
-              </div>
-            </div>
+            <SkillsList/>
           </div>
 
           <div className="other-skills">
             <h3 className="subtitle">Other Skills</h3>
-            <div className="misc-skills">
-              <span className="skill-tag">HTML5</span>
-              <span className="skill-tag">CSS3</span>
-              <span className="skill-tag">SASS</span>
-              <span className="skill-tag">LESS</span>
-              <span className="skill-tag">Git</span>
-              <br />
-                <span className="skill-tag">Ruby</span>
-                <span className="skill-tag">PHP</span>
-                <span className="skill-tag">Wireframe</span>
-                <span className="skill-tag">Spanish</span>
-                <span className="skill-tag">French</span>
-            </div>
+              <SkillsTags/>
           </div>
 
         </section>
