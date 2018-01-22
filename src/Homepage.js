@@ -23,6 +23,7 @@ import jsImg from './img/javascript.jpeg';
 import brooklynImg from './img/brooklyn2.jpg';
 
 import pic from './img/pic.jpg';
+import SocialLinks from "./layouts/SocialLinks";
 
 export default class Homepage extends Component {
   constructor(props) {
@@ -408,28 +409,7 @@ export default class Homepage extends Component {
                   <li><FontAwesomeIcon icon={faCheck} /> UX prototyping</li>
                 </ul>
                 <p>Drop me a line at <a href="mailto:someone@example.com">james.doe@website.com</a> or call me at <a href="tel:01234567890">0123 456 7890</a></p>
-                <ul className="social list-inline">
-                  <li className="list-inline-item">
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" >
-                      <FontAwesomeIcon icon={faLinkedinIn} />
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <FontAwesomeIcon icon={faTwitter} />
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <FontAwesomeIcon icon={faGithub} />
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <FontAwesomeIcon icon={faStackOverflow} />
-                    </a>
-                  </li>
-                </ul>
+                <SocialLinks/>
               </div>
           </div>
 

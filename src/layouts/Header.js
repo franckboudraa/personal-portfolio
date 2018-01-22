@@ -3,31 +3,21 @@ import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setUrl, checkTopButton } from '../actions';
 
-import LinksList from './LinksList';
-
-import {
-  Link,
-  animateScroll as scroll,
-  scroller,
-} from 'react-scroll';
+import { Link, scroller } from 'react-scroll';
 
 import Sticky from 'react-stickynode';
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/fontawesome-free-solid';
-import {
-  faLinkedinIn,
-  faGithub,
-  faStackOverflow,
-  faTwitter,
-} from '@fortawesome/fontawesome-free-brands';
 
 import '../css/styles.css';
 import pic from '../img/pic.jpg';
 
+import SocialLinks from './SocialLinks';
+import LinksList from './LinksList';
+
 class Header extends Component {
   componentDidMount = () => {
-    //scrollSpy.update();
     switch (this.props.history.location.pathname) {
       case '/education':
         return this.changeUrlTo('education');
@@ -52,19 +42,20 @@ class Header extends Component {
     });
   };
 
-  scrollToTop = () => {
+  /*scrollToTop = () => {
     scroll.scrollToTop();
-  };
+  };*/
 
   handleSetActive = to => {
     this.props.setUrl(to);
   };
 
-  handleStickyChange = ({status}) => {
+  handleStickyChange = ({ status }) => {
+    const { checkTopButton } = this.props;
     if (status === Sticky.STATUS_FIXED) {
-      this.props.checkTopButton(true);
-    }else{
-      this.props.checkTopButton(false);
+      checkTopButton(true);
+    } else {
+      checkTopButton(false);
     }
   };
 
@@ -89,32 +80,7 @@ class Header extends Component {
               Contact me
             </Link>
           </div>
-          <ul className="social list-inline">
-            <li className="list-inline-item">
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faLinkedinIn} />
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="#">
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="#">
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="#">
-                <FontAwesomeIcon icon={faStackOverflow} />
-              </a>
-            </li>
-          </ul>
+          <SocialLinks />
         </div>
 
         <div className="intro">
@@ -140,7 +106,11 @@ class Header extends Component {
           </div>
         </div>
 
-        <Sticky enabled={true} innerZ={1000} onStateChange={this.handleStickyChange}>
+        <Sticky
+          enabled={true}
+          innerZ={1000}
+          onStateChange={this.handleStickyChange}
+        >
           <div className="page-nav-space-holder d-none d-md-block">
             <div id="page-nav-wrapper" className="page-nav-wrapper text-center">
               <div className="container">
@@ -154,8 +124,10 @@ class Header extends Component {
   }
 }
 
-function mapStateToProps({topButton}){
-  return ({topButton});
-};
+function mapStateToProps({ topButton }) {
+  return { topButton };
+}
 
-export default withRouter(connect(mapStateToProps, { setUrl, checkTopButton })(Header));
+export default withRouter(
+  connect(mapStateToProps, { setUrl, checkTopButton })(Header),
+);
