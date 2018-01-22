@@ -1,42 +1,53 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import {faGithub, faLinkedinIn, faStackOverflow, faTwitter} from "@fortawesome/fontawesome-free-brands";
+import {
+  faGithub,
+  faLinkedinIn,
+  faStackOverflow,
+  faTwitter,
+} from '@fortawesome/fontawesome-free-brands';
 
 const items = [
-  { key:'li',
+  {
+    key: 'li',
     icon: faLinkedinIn,
-    url: 'https://linkedin.com/in/franckboudraa'
+    url: 'https://linkedin.com/in/franckboudraa',
   },
-  { key:'tw',
+  {
+    key: 'tw',
     icon: faTwitter,
-    url: 'https://twitter.com/neocydfr'
+    url: 'https://twitter.com/neocydfr',
   },
-  { key:'gh',
+  {
+    key: 'gh',
     icon: faGithub,
-    url: 'https://github.com/franckboudraa'
+    url: 'https://github.com/franckboudraa',
   },
-  { key:'so',
+  {
+    key: 'so',
     icon: faStackOverflow,
-    url: 'https://stackoverflow.com/users/1527134/neocydfr'
-  }
+    url: 'https://stackoverflow.com/users/1527134/neocydfr',
+  },
 ];
 
-class SocialLinks extends Component{
-  render(){
+class SocialLinks extends Component {
+  render() {
     const renderItems = items.map(item => {
       return (
-        <li className="list-inline-item" key={this.props.keyPrefix+item.key}>
+        <li className="list-inline-item" key={this.props.keyPrefix + item.key}>
           <a href={item.url} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={item.icon}/>
+            <FontAwesomeIcon icon={item.icon} />
           </a>
         </li>
-        );
+      );
     });
-    return(
-      <ul className="social list-inline">
-        {renderItems}
-      </ul>
-    )
+    return <ul className="social list-inline">{renderItems}</ul>;
   }
 }
 export default SocialLinks;
+
+SocialLinks.propTypes = {
+  keyPrefix: PropTypes.string,
+};

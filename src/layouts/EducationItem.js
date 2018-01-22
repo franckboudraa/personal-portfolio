@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class EducationItem extends Component {
   render() {
@@ -9,9 +10,18 @@ export default class EducationItem extends Component {
           <h3 className="degree">{name}</h3>
           <div className="education-body">{school}</div>
           <div className="time">{timeline}</div>
-          <div className="desc"><em>{description}</em></div>
+          <div className="desc">
+            <em>{description}</em>
+          </div>
         </div>
       </div>
     );
   }
 }
+
+EducationItem.propTypes = {
+  name: PropTypes.string,
+  school: PropTypes.string,
+  timeline: PropTypes.string,
+  description: PropTypes.string,
+};

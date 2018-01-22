@@ -783,3 +783,9 @@ a {
   color: #566f7c;
   margin-bottom: 10px;
 }
+
+.portfolio-section .portfolio-body {
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 400;
+}

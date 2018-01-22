@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setUrl, checkTopButton } from '../actions';
@@ -10,7 +12,7 @@ import Sticky from 'react-stickynode';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import {
   faPaperPlane,
-  faMapMarkerAlt
+  faMapMarkerAlt,
 } from '@fortawesome/fontawesome-free-solid';
 
 import '../css/styles.css';
@@ -98,7 +100,11 @@ class Header extends Component {
               </p>
               <p>
                 Available for hire.<br />
-                <FontAwesomeIcon icon={faMapMarkerAlt} style={{marginRight:'5px'}} /> Paris
+                <FontAwesomeIcon
+                  icon={faMapMarkerAlt}
+                  style={{ marginRight: '5px' }}
+                />{' '}
+                Paris
               </p>
             </div>
           </div>
@@ -129,3 +135,9 @@ function mapStateToProps({ topButton }) {
 export default withRouter(
   connect(mapStateToProps, { setUrl, checkTopButton })(Header),
 );
+
+Header.propTypes = {
+  history: PropTypes.object,
+  setUrl: PropTypes.func,
+  checkTopButton: PropTypes.func,
+};

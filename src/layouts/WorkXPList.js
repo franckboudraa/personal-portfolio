@@ -49,7 +49,7 @@ const works = [
             <li>2010-2011: <strong>Zebra Square</strong> <em>(5 stars Hotel)</em></li>
             <li>2008-2010: <strong>Auberge du Petit Pussay</strong> <em>(Bistrot)</em></li>
           </ul>`,
-  }
+  },
 ];
 
 class WorkXPList extends Component {

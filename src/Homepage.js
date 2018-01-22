@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/fontawesome-free-solid';
 
-import reactImg from './img/react.png';
+/*import reactImg from './img/react.png';
 import meteorImg from './img/meteor.png';
 import nodeImg from './img/node.png';
 import mongoImg from './img/mongodb.png';
@@ -13,15 +13,15 @@ import mysqlImg from './img/mysql.png';
 import expressImg from './img/expressjs.png';
 import htmlImg from './img/html5.png';
 import cssImg from './img/css3.png';
-import jsImg from './img/javascript.jpeg';
-import brooklynImg from './img/brooklyn2.jpg';
+import jsImg from './img/javascript.jpeg';*/
 
 import pic from './img/pic.jpg';
-import SocialLinks from "./layouts/SocialLinks";
-import WorkXPList from "./layouts/WorkXPList";
-import EducationList from "./layouts/EducationList";
-import SkillsList from "./layouts/SkillsList";
-import SkillsTags from "./layouts/SkillsTags";
+import SocialLinks from './layouts/SocialLinks';
+import WorkXPList from './layouts/WorkXPList';
+import EducationList from './layouts/EducationList';
+import SkillsList from './layouts/SkillsList';
+import SkillsTags from './layouts/SkillsTags';
+import PortfolioList from './layouts/PortfolioList';
 
 export default class Homepage extends Component {
   constructor(props) {
@@ -30,7 +30,7 @@ export default class Homepage extends Component {
     document.title = `Home - Franck's portfolio`;
   }
 
-  renderTechStack = (techName) => {
+  /*renderTechStack = (techName) => {
     let image;
 
     switch (techName) {
@@ -79,7 +79,7 @@ export default class Homepage extends Component {
         </a>
       </span>
     );
-  };
+  };*/
 
   render() {
     return (
@@ -87,185 +87,122 @@ export default class Homepage extends Component {
         <section id="experiences" className="experiences-section section">
           <h2 className="section-title">Work Experiences</h2>
           <div className="timeline">
-            <WorkXPList/>
+            <WorkXPList />
           </div>
-
         </section>
 
         <section id="education" className="education-section section">
           <h2 className="section-title">Education</h2>
-            <EducationList/>
+          <EducationList />
         </section>
-
 
         <section id="skills" className="skills-section section text-center">
           <h2 className="section-title">Professional Skills</h2>
           <div className="top-skills">
             <h3 className="subtitle">Top Skills</h3>
-            <SkillsList/>
+            <SkillsList />
           </div>
 
           <div className="other-skills">
             <h3 className="subtitle">Other Skills</h3>
-              <SkillsTags/>
+            <SkillsTags />
           </div>
-
         </section>
 
         <section id="portfolio" className="portfolio-section section">
           <h2 className="section-title">Portfolio</h2>
-          <ul id="filters" className="filters clearfix">
-            <li className="type active" data-filter="*">All</li>
-            <li className="type" data-filter=".backend">Back-end</li>
-            <li className="type" data-filter=".frontend">Front-end</li>
-          </ul>
-          <div className="items-wrapper isotope row">
-            <div className="item frontend col-lg-3 col-6">
-              <div className="item-inner">
-                <figure className="figure">
-                  <img className="img-fluid" src="assets/images/portfolio/portfolio-1.jpg" alt="" />
-                </figure>
-                <div className="content text-left">
-                  <h3 className="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
-                  <div className="meta">AngularJS</div>
-                  <div className="action"><a href="#">View on Github</a></div>
-                </div>
-                <a className="link-mask" href="#"></a>
-              </div>
-            </div>
-            <div className="item backend col-lg-3 col-6">
-              <div className="item-inner">
-                <figure className="figure">
-                  <img className="img-fluid" src="assets/images/portfolio/portfolio-2.jpg" alt="" />
-                </figure>
-                <div className="content text-left">
-                  <h3 className="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
-                  <div className="meta">Django</div>
-                  <div className="action"><a href="#">View on Github</a></div>
-                </div>
-                <a className="link-mask" href="#"></a>
-              </div>
-            </div>
-            <div className="item backend frontend col-lg-3 col-6">
-              <div className="item-inner">
-                <figure className="figure">
-                  <img className="img-fluid" src="assets/images/portfolio/portfolio-3.jpg" alt="" />
-                </figure>
-                <div className="content text-left">
-                  <h3 className="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
-                  <div className="meta">Django/JavaScript</div>
-                  <div className="action"><a href="#">View on Github</a></div>
-                </div>
-                <a className="link-mask" href="#"></a>
-              </div>
-            </div>
-            <div className="item frontend col-lg-3 col-6">
-              <div className="item-inner">
-                <figure className="figure">
-                  <img className="img-fluid" src="assets/images/portfolio/portfolio-4.jpg" alt="" />
-                </figure>
-                <div className="content text-left">
-                  <h3 className="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
-                  <div className="meta">ReactJS</div>
-                  <div className="action"><a href="#">View on Github</a></div>
-                </div>
-                <a className="link-mask" href="#"></a>
-              </div>
-            </div>
-            <div className="item backend col-lg-3 col-6">
-              <div className="item-inner">
-                <figure className="figure">
-                  <img className="img-fluid" src="assets/images/portfolio/portfolio-5.jpg" alt="" />
-                </figure>
-                <div className="content text-left">
-                  <h3 className="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
-                  <div className="meta">Python</div>
-                  <div className="action"><a href="#">View on Github</a></div>
-                </div>
-                <a className="link-mask" href="#"></a>
-              </div>
-            </div>
-            <div className="item backend col-lg-3 col-6">
-              <div className="item-inner">
-                <figure className="figure">
-                  <img className="img-fluid" src="assets/images/portfolio/portfolio-6.jpg" alt="" />
-                </figure>
-                <div className="content text-left">
-                  <h3 className="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
-                  <div className="meta">JavaScript</div>
-                  <div className="action"><a href="#">View on Github</a></div>
-                </div>
-                <a className="link-mask" href="#"></a>
-              </div>
-            </div>
-
-            <div className="item frontend col-lg-3 col-6">
-              <div className="item-inner">
-                <figure className="figure">
-                  <img className="img-fluid" src="assets/images/portfolio/portfolio-7.jpg" alt="" />
-                </figure>
-                <div className="content text-left">
-                  <h3 className="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
-                  <div className="meta">HTML/AngularJS</div>
-                  <div className="action"><a href="#">View on Github</a></div>
-                </div>
-                <a className="link-mask" href="#"></a>
-              </div>
-            </div>
-
-            <div className="item frontend backend col-lg-3 col-6">
-              <div className="item-inner">
-                <figure className="figure">
-                  <img className="img-fluid" src="assets/images/portfolio/portfolio-8.jpg" alt="" />
-                </figure>
-                <div className="content text-left">
-                  <h3 className="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
-                  <div className="meta">Python/AngularJS</div>
-                  <div className="action"><a href="#">View on Github</a></div>
-                </div>
-                <a className="link-mask" href="#"></a>
-              </div>
-            </div>
-
-          </div>
-
+          <PortfolioList />
         </section>
 
         <section id="contact" className="contact-section section">
           <h2 className="section-title">Get in Touch</h2>
           <div className="intro">
-            <img className="profile-image rounded-circle img-thumbnail" src={pic} alt="" />
-              <div className="dialog">
-                <p>I'm currently taking on freelance work. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
-                <p><strong>I can help with the following:</strong></p>
-                <ul className="list-unstyled service-list">
-                  <li><FontAwesomeIcon icon={faCheck} /> App development with ReactJS</li>
-                  <li><FontAwesomeIcon icon={faCheck} /> Front-end development with AngularJS</li>
-                  <li><FontAwesomeIcon icon={faCheck} /> Back-end development with Django/Python</li>
-                  <li><FontAwesomeIcon icon={faCheck} /> UI development</li>
-                  <li><FontAwesomeIcon icon={faCheck} /> UX prototyping</li>
-                </ul>
-                <ul className="list-unstyled service-list">
-                  <li><FontAwesomeIcon icon={faCheck} /> App development with ReactJS</li>
-                  <li><FontAwesomeIcon icon={faCheck} /> Front-end development with AngularJS</li>
-                  <li><FontAwesomeIcon icon={faCheck} /> Back-end development with Django/Python</li>
-                  <li><FontAwesomeIcon icon={faCheck} /> UI development</li>
-                  <li><FontAwesomeIcon icon={faCheck} /> UX prototyping</li>
-                </ul>
-                <ul className="list-unstyled service-list">
-                  <li><FontAwesomeIcon icon={faCheck} /> App development with ReactJS</li>
-                  <li><FontAwesomeIcon icon={faCheck} /> Front-end development with AngularJS</li>
-                  <li><FontAwesomeIcon icon={faCheck} /> Back-end development with Django/Python</li>
-                  <li><FontAwesomeIcon icon={faCheck} /> UI development</li>
-                  <li><FontAwesomeIcon icon={faCheck} /> UX prototyping</li>
-                </ul>
-                <p>Drop me a line at <a href="mailto:someone@example.com">james.doe@website.com</a> or call me at <a href="tel:01234567890">0123 456 7890</a></p>
-                <SocialLinks keyPrefix="contact" />
-              </div>
+            <img
+              className="profile-image rounded-circle img-thumbnail"
+              src={pic}
+              alt=""
+            />
+            <div className="dialog">
+              <p>
+                I'm currently taking on freelance work. Lorem ipsum dolor sit
+                amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                parturient montes. Aenean vulputate eleifend tellus. Aenean leo
+                ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+              </p>
+              <p>
+                <strong>I can help with the following:</strong>
+              </p>
+              <ul className="list-unstyled service-list">
+                <li>
+                  <FontAwesomeIcon icon={faCheck} /> App development with
+                  ReactJS
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCheck} /> Front-end development with
+                  AngularJS
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCheck} /> Back-end development with
+                  Django/Python
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCheck} /> UI development
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCheck} /> UX prototyping
+                </li>
+              </ul>
+              <ul className="list-unstyled service-list">
+                <li>
+                  <FontAwesomeIcon icon={faCheck} /> App development with
+                  ReactJS
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCheck} /> Front-end development with
+                  AngularJS
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCheck} /> Back-end development with
+                  Django/Python
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCheck} /> UI development
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCheck} /> UX prototyping
+                </li>
+              </ul>
+              <ul className="list-unstyled service-list">
+                <li>
+                  <FontAwesomeIcon icon={faCheck} /> App development with
+                  ReactJS
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCheck} /> Front-end development with
+                  AngularJS
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCheck} /> Back-end development with
+                  Django/Python
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCheck} /> UI development
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCheck} /> UX prototyping
+                </li>
+              </ul>
+              <p>
+                Drop me a line at{' '}
+                <a href="mailto:someone@example.com">james.doe@website.com</a>{' '}
+                or call me at <a href="tel:01234567890">0123 456 7890</a>
+              </p>
+              <SocialLinks keyPrefix="contact" />
+            </div>
           </div>
-
         </section>
-
       </div>
     );
   }

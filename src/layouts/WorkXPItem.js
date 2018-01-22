@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/fontawesome-free-solid';
@@ -32,3 +33,11 @@ class WorkXPItem extends Component {
 }
 
 export default WorkXPItem;
+
+WorkXPItem.propTypes = {
+  place: PropTypes.string,
+  location: PropTypes.string,
+  title: PropTypes.string,
+  timeline: PropTypes.string,
+  description: PropTypes.string,
+};

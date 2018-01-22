@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+
 import { Link } from 'react-scroll';
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
@@ -47,3 +49,8 @@ class LinksItem extends Component {
 }
 
 export default connect(null, { setUrl })(LinksItem);
+
+LinksItem.propTypes = {
+  section: PropTypes.string,
+  setUrl: PropTypes.func,
+};
