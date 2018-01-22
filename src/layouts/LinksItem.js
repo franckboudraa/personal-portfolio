@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-scroll';
 
-export default class LinksItem extends Component {
+import { setUrl } from "../actions";
+
+class LinksItem extends Component {
+  handleActive = () => {
+    this.props.setUrl(this.props.section);
+  };
+
   render() {
     return (
       <li className="nav-item">
@@ -13,7 +20,7 @@ export default class LinksItem extends Component {
           smooth={true}
           offset={-50}
           duration={1000}
-          onSetActive={this.handleSetActive}
+          onSetActive={this.handleActive}
         >
           {this.props.section}
         </Link>
@@ -21,3 +28,5 @@ export default class LinksItem extends Component {
     );
   }
 }
+
+export default connect(null, {setUrl})(LinksItem);

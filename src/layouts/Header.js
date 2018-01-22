@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { setUrl, checkTopButton } from '../actions';
+
 import LinksList from './LinksList';
 
-import * as Scroll from 'react-scroll';
 import {
   Link,
-  DirectLink,
-  Element,
-  Events,
   animateScroll as scroll,
   scrollSpy,
   scroller,
@@ -29,20 +28,24 @@ import pic from '../img/pic.jpg';
 
 class Header extends Component {
   componentDidMount = () => {
-    console.log('test'.toLocaleUpperCase());
-    switch(this.props.history.location.pathname){
+    //scrollSpy.update();
+    switch (this.props.history.location.pathname) {
       case '/education':
         return this.changeUrlTo('education');
       case '/experiences':
         return this.changeUrlTo('experiences');
+      case '/skills':
+        return this.changeUrlTo('skills');
+      case '/portfolio':
+        return this.changeUrlTo('portfolio');
       case '/contact':
         return this.changeUrlTo('contact');
+      default:
+        return this.changeUrlTo('');
     }
-
-    scrollSpy.update();
   };
 
-  changeUrlTo = (url) => {
+  changeUrlTo = url => {
     scroller.scrollTo(url, {
       duration: 1000,
       smooth: true,
@@ -53,39 +56,22 @@ class Header extends Component {
   scrollToTop = () => {
     scroll.scrollToTop();
   };
-  scrollToBottom = () => {
-    scroll.scrollToBottom();
-  };
-  scrollTo = () => {
-    scroll.scrollTo(100);
-  };
-  scrollMore = () => {
-    scroll.scrollMore(100);
-  };
+
   handleSetActive = to => {
-    this.props.history.push('/' + to);
+    this.props.setUrl(to);
   };
 
-  renderLink = (section) => {
-    return (
-      <Link
-        activeClass="active"
-        className="nav-link"
-        to={section}
-        spy={true}
-        smooth={true}
-        offset={-50}
-        duration={1000}
-        onSetActive={this.handleSetActive}
-      >
-        {section}
-      </Link>
-    );
+  handleStickyChange = ({status}) => {
+    if (status === Sticky.STATUS_FIXED) {
+      this.props.checkTopButton(true);
+    }else{
+      this.props.checkTopButton(false);
+    }
   };
 
   render() {
     return (
-      <header className="header">
+      <header id="top" className="header">
         <div className="top-bar container-fluid">
           <div className="actions">
             <Link
@@ -155,7 +141,7 @@ class Header extends Component {
           </div>
         </div>
 
-        <Sticky enabled={true} innerZ={1000}>
+        <Sticky enabled={true} innerZ={1000} onStateChange={this.handleStickyChange}>
           <div className="page-nav-space-holder d-none d-md-block">
             <div id="page-nav-wrapper" className="page-nav-wrapper text-center">
               <div className="container">
@@ -169,4 +155,8 @@ class Header extends Component {
   }
 }
 
-export default withRouter(Header);
+function mapStateToProps({topButton}){
+  return ({topButton});
+};
+
+export default withRouter(connect(mapStateToProps, { setUrl, checkTopButton })(Header));

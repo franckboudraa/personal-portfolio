@@ -1,35 +1,28 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
 import LinksItem from './LinksItem';
 
 const items = ['experiences', 'education', 'skills', 'portfolio', 'contact'];
 
-export default class LinksList extends Component{
-  renderItems = () => {
-    items.map(item => {
-      return <LinksItem section={item} />
-    })
-  };
-
-  render(){
-    return(
+class LinksList extends Component {
+  render() {
+    const renderItems = items.map(item => {
+      return <LinksItem key={item} section={item} />;
+    });
+    return (
       <ul id="page-nav" className="nav page-nav list-inline">
-        {this.renderItems}
-        <li className="nav-item">
-          {this.renderLink('experiences')}
-        </li>
-        <li className="nav-item">
-          {this.renderLink('education')}
-        </li>
-        <li className="nav-item">
-          {this.renderLink('skills')}
-        </li>
-        <li className="nav-item">
-          {this.renderLink('portfolio')}
-        </li>
-        <li className="nav-item">
-          {this.renderLink('contact')}
-        </li>
+        {this.props.topButton === true &&
+          <LinksItem key="top" section="top" />
+        }
+        {renderItems}
       </ul>
-    )
+    );
   }
 }
+
+function mapStateToProps({ topButton }) {
+  return { topButton };
+}
+
+export default connect(mapStateToProps, {})(LinksList);

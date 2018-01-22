@@ -1,26 +1,27 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+
+import { ConnectedRouter } from 'react-router-redux'
 
 import Header from './layouts/Header';
 import Footer from './layouts/Footer';
 
 import Homepage from './Homepage';
-import About from './About';
-import Contact from './Contact';
-//import Projects from './Projects';
-import ProjectShow from "./ProjectShow";
-
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Header />
+      <ConnectedRouter history={this.props.history}>
         <div>
-          <Route path="/" component={Homepage} />
+          <Header />
+
+          <Switch>
+            <Route path="/" component={Homepage} />
+          </Switch>
+
+          <Footer />
         </div>
-        <Footer/>
-      </div>
+      </ConnectedRouter>
     );
   }
 }
