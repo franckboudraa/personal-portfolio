@@ -18,7 +18,7 @@ const items = [
     context: 'OC Full Stack Developer Path',
     githubUrl: 'https://github.com/franckboudraa/personal-portfolio',
     projectUrl: 'http://www.franckboudraa.me',
-    stack: ['Bootstrap 4', 'React', 'Redux', 'Sendgrid API'],
+    stack: ['HTML5, CSS3 & ES6', 'Bootstrap 4', 'React', 'Redux',],
     description: 'Single page app portfolio in React',
     image: brooklyn,
   },

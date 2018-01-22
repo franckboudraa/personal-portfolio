@@ -28,6 +28,9 @@ class ContactForm extends Component {
 
   handleSubmit = () => {
     const { email, message } = this.state.input;
+    if(email.length < 12 || message.length < 12){
+      return;
+    }
     this.props.sendEmail(email, message);
   };
 
@@ -52,7 +55,7 @@ class ContactForm extends Component {
                 type="email"
                 name="email"
                 id="email"
-                placeholder="with a placeholder"
+                placeholder="Your email"
                 value={this.state.input.email}
                 onChange={this.handleChange}
                 required
@@ -61,7 +64,7 @@ class ContactForm extends Component {
           </FormGroup>
           <FormGroup row>
             <Label for="exampleText" sm={2}>
-              Text Area
+              Message
             </Label>
             <Col sm={10}>
               <Input
@@ -70,6 +73,7 @@ class ContactForm extends Component {
                 id="message"
                 className="not-resizable"
                 rows="8"
+                placeholder="Your message"
                 value={this.state.input.message}
                 onChange={this.handleChange}
                 required
