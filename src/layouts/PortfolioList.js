@@ -9,7 +9,7 @@ const items = [
     context: 'OC Full Stack Developer Path',
     githubUrl: 'https://github.com/franckboudraa/oc-brooklyn-festival',
     projectUrl: 'http://www.franckboudraa.me/oc-brooklyn-festival',
-    stack: ['HTML5', 'CSS3', 'Bootstrap 4', 'jQuery'],
+    stack: ['HTML5 & CSS3', 'Bootstrap 4', 'jQuery', 'Google Maps API'],
     description: 'Simple mockup website',
     image: brooklyn,
   },

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/fontawesome-free-solid';
 
@@ -22,6 +21,7 @@ import EducationList from './layouts/EducationList';
 import SkillsList from './layouts/SkillsList';
 import SkillsTags from './layouts/SkillsTags';
 import PortfolioList from './layouts/PortfolioList';
+import ContactComponent from "./layouts/ContactComponent";
 
 export default class Homepage extends Component {
   constructor(props) {
@@ -124,84 +124,29 @@ export default class Homepage extends Component {
             />
             <div className="dialog">
               <p>
-                I'm currently taking on freelance work. Lorem ipsum dolor sit
-                amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                parturient montes. Aenean vulputate eleifend tellus. Aenean leo
-                ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                I'm currently studying on OpenClassrooms Full Stack Developer path.
               </p>
+              <p>I'm available for hire.</p>
               <p>
                 <strong>I can help with the following:</strong>
               </p>
               <ul className="list-unstyled service-list">
                 <li>
-                  <FontAwesomeIcon icon={faCheck} /> App development with
-                  ReactJS
+                  <FontAwesomeIcon icon={faCheck} className='mr-2'/> Full Stack app development
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faCheck} /> Front-end development with
-                  AngularJS
+                  <FontAwesomeIcon icon={faCheck} className='mr-2' /> Front-end development with
+                  React
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faCheck} /> Back-end development with
-                  Django/Python
+                  <FontAwesomeIcon icon={faCheck} className='mr-2' /> Back-end development with
+                  NodeJS / Ruby on Rails
                 </li>
-                <li>
-                  <FontAwesomeIcon icon={faCheck} /> UI development
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faCheck} /> UX prototyping
-                </li>
-              </ul>
-              <ul className="list-unstyled service-list">
-                <li>
-                  <FontAwesomeIcon icon={faCheck} /> App development with
-                  ReactJS
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faCheck} /> Front-end development with
-                  AngularJS
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faCheck} /> Back-end development with
-                  Django/Python
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faCheck} /> UI development
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faCheck} /> UX prototyping
-                </li>
-              </ul>
-              <ul className="list-unstyled service-list">
-                <li>
-                  <FontAwesomeIcon icon={faCheck} /> App development with
-                  ReactJS
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faCheck} /> Front-end development with
-                  AngularJS
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faCheck} /> Back-end development with
-                  Django/Python
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faCheck} /> UI development
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faCheck} /> UX prototyping
-                </li>
-              </ul>
-              <p>
-                Drop me a line at{' '}
-                <a href="mailto:someone@example.com">james.doe@website.com</a>{' '}
-                or call me at <a href="tel:01234567890">0123 456 7890</a>
-              </p>
+              </ul></div> </div>
+              <ContactComponent/>
               <SocialLinks keyPrefix="contact" />
-            </div>
-          </div>
+
+
         </section>
       </div>
     );
