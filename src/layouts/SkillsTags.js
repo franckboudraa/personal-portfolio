@@ -9,7 +9,6 @@ const skills = [
   'PHP',
   'jQuery',
   'AWS',
-  'French',
 ];
 
 export default class SkillsTags extends Component {

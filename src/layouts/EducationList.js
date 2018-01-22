@@ -8,19 +8,19 @@ const degrees = [
     name: 'Bachelor Full Stack Developer',
     school: 'OpenClassrooms',
     timeline: '2018-Present',
-    description: 'Currently studying',
+    description: 'Expected - End of 2018',
   },
   {
-    name: 'Bac Professionnel Cuisine',
+    name: 'Cooking High-School Degree (BAC)',
     school: 'CFA Médéric Paris',
     timeline: '2010-2012',
-    description: 'Full time internship',
+    description: 'Apprenticeship',
   },
   {
-    name: 'CAP Cuisine',
+    name: 'Cooking Professional Certificate (CAP)',
     school: "Faculté des métiers d'Evry",
     timeline: '2008-2010',
-    description: 'Full time internship',
+    description: 'Apprenticeship',
   },
 ];
 

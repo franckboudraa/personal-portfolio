@@ -21,7 +21,7 @@ import EducationList from './layouts/EducationList';
 import SkillsList from './layouts/SkillsList';
 import SkillsTags from './layouts/SkillsTags';
 import PortfolioList from './layouts/PortfolioList';
-import ContactComponent from "./layouts/ContactComponent";
+import ContactComponent from './layouts/ContactComponent';
 
 export default class Homepage extends Component {
   constructor(props) {
@@ -107,6 +107,15 @@ export default class Homepage extends Component {
             <h3 className="subtitle">Other Skills</h3>
             <SkillsTags />
           </div>
+          <div className="other-skills">
+            <h3 className="subtitle">Languages</h3>
+            <span className="skill-tag">
+              French
+            </span>
+            <span className="skill-tag">
+              English
+            </span>
+          </div>
         </section>
 
         <section id="portfolio" className="portfolio-section section">
@@ -124,7 +133,8 @@ export default class Homepage extends Component {
             />
             <div className="dialog">
               <p>
-                I'm currently studying on OpenClassrooms Full Stack Developer path.
+                I'm currently studying on OpenClassrooms Full Stack Developer
+                path.
               </p>
               <p>I'm available for hire.</p>
               <p>
@@ -132,21 +142,22 @@ export default class Homepage extends Component {
               </p>
               <ul className="list-unstyled service-list">
                 <li>
-                  <FontAwesomeIcon icon={faCheck} className='mr-2'/> Full Stack app development
+                  <FontAwesomeIcon icon={faCheck} className="mr-2" /> Full Stack
+                  app development
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faCheck} className='mr-2' /> Front-end development with
-                  React
+                  <FontAwesomeIcon icon={faCheck} className="mr-2" /> Front-end
+                  development with React
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faCheck} className='mr-2' /> Back-end development with
-                  NodeJS / Ruby on Rails
+                  <FontAwesomeIcon icon={faCheck} className="mr-2" /> Back-end
+                  development with NodeJS / Ruby on Rails
                 </li>
-              </ul></div> </div>
-              <ContactComponent/>
-              <SocialLinks keyPrefix="contact" />
-
-
+              </ul>
+            </div>{' '}
+          </div>
+          <ContactComponent />
+          <SocialLinks keyPrefix="contact" />
         </section>
       </div>
     );
