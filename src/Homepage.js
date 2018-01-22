@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/fontawesome-free-solid';
 
+import {PieChart} from 'react-easy-chart';
+
 import reactImg from './img/react.png';
 import meteorImg from './img/meteor.png';
 import nodeImg from './img/node.png';
@@ -103,9 +105,14 @@ export default class Homepage extends Component {
             <div className="row">
               <div className="item col-12 col-md-4">
                 <div className="item-inner">
-                  <div className="chart-easy-pie text-center">
-                    <div className="chart-theme-1 chart" data-percent="98"><span>98</span>%</div>
-                  </div>
+                  <PieChart
+                    size={100}
+                    innerHoleSize={50}
+                    data={[
+                      { key: 'A', value: 100, color: '#566f7c' },
+                      { key: 'B', value: 50, color: '#f5f5f5' }
+                    ]}
+                  />
                   <h4 className="skill-name">Python &amp; Django</h4>
                   <div className="level">Expert, 8 years</div>
                   <div className="desc">
@@ -115,9 +122,14 @@ export default class Homepage extends Component {
               </div>
               <div className="item col-12 col-md-4">
                 <div className="item-inner">
-                  <div className="chart-easy-pie text-center">
-                    <div className="chart-theme-1 chart" data-percent="90"><span>90</span>%</div>
-                  </div>
+                  <PieChart
+                    size={100}
+                    innerHoleSize={50}
+                    data={[
+                      { key: 'C', value: 100, color: '#566f7c' },
+                      { key: 'D', value: 50, color: '#f5f5f5' }
+                    ]}
+                  />
                   <h4 className="skill-name">JavaScript</h4>
                   <div className="level">Expert, 8 years</div>
                   <div className="desc">
@@ -127,9 +139,14 @@ export default class Homepage extends Component {
               </div>
               <div className="item col-12 col-md-4">
                 <div className="item-inner">
-                  <div className="chart-easy-pie text-center">
-                    <div className="chart-theme-1 chart" data-percent="85"><span>85</span>%</div>
-                  </div>
+                  <PieChart
+                    size={100}
+                    innerHoleSize={50}
+                    data={[
+                      { key: 'E', value: 100, color: '#566f7c' },
+                      { key: 'F', value: 50, color: '#f5f5f5' }
+                    ]}
+                  />
                   <h4 className="skill-name">React &amp; Angular</h4>
                   <div className="level">Advanced, 4 years</div>
                   <div className="desc">
