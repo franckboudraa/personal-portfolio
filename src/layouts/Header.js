@@ -8,7 +8,6 @@ import LinksList from './LinksList';
 import {
   Link,
   animateScroll as scroll,
-  scrollSpy,
   scroller,
 } from 'react-scroll';
 

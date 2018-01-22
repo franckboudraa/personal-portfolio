@@ -2,11 +2,28 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-scroll';
 
-import { setUrl } from "../actions";
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import { faAngleUp } from '@fortawesome/fontawesome-free-solid';
+
+import { setUrl } from '../actions';
 
 class LinksItem extends Component {
   handleActive = () => {
     this.props.setUrl(this.props.section);
+  };
+
+  renderLinkTitle = () => {
+    const { section } = this.props;
+    if (section === 'top') {
+      return (
+        <span>
+          <FontAwesomeIcon icon={faAngleUp} style={{ marginRight: '5px' }} />
+          Back to top
+        </span>
+      );
+    } else {
+      return section;
+    }
   };
 
   render() {
@@ -22,11 +39,11 @@ class LinksItem extends Component {
           duration={1000}
           onSetActive={this.handleActive}
         >
-          {this.props.section}
+          {this.renderLinkTitle()}
         </Link>
       </li>
     );
   }
 }
 
-export default connect(null, {setUrl})(LinksItem);
+export default connect(null, { setUrl })(LinksItem);
