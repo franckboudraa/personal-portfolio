@@ -1,7 +1,7 @@
-import {CHECK_TOP_BUTTON} from "../actions/types";
+import { CHECK_TOP_BUTTON } from '../actions/types';
 
-export default function(state = false, action){
-  switch(action.type){
+export default function(state = false, action) {
+  switch (action.type) {
     case CHECK_TOP_BUTTON:
       return action.payload;
 

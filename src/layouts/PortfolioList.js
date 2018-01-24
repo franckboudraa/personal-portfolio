@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PortfolioItem from './PortfolioItem';
 
-import brooklyn from '../img/brooklyn2.jpg';
+import brooklyn from '../img/brooklyn3.jpg';
+import portfolio from '../img/portfolio.jpg';
 
 const items = [
   {
@@ -9,7 +10,7 @@ const items = [
     context: 'Mockup website for OC Full Stack Developer Path',
     githubUrl: 'https://github.com/franckboudraa/oc-brooklyn-festival',
     projectUrl: 'http://www.franckboudraa.me/oc-brooklyn-festival',
-    stack: ['HTML5, CSS3', 'Bootstrap 4', 'jQuery', 'Google Maps API'],
+    stack: ['HTML5, CSS3', 'JS', 'Bootstrap 4', 'jQuery', 'Google Maps API'],
     description: '',
     image: brooklyn,
   },
@@ -18,9 +19,9 @@ const items = [
     context: 'Single Page App',
     githubUrl: 'https://github.com/franckboudraa/personal-portfolio',
     projectUrl: 'http://www.franckboudraa.me',
-    stack: ['HTML5, CSS3 & ES6', 'Bootstrap 4', 'React', 'Redux',],
+    stack: ['HTML5, CSS3', 'JS', 'Bootstrap 4', 'React', 'Redux'],
     description: '',
-    image: brooklyn,
+    image: portfolio,
   },
 ];
 

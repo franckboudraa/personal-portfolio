@@ -4,11 +4,17 @@ const skills = [
   'HTML5',
   'CSS3',
   'Git',
+  'Bootstrap',
   'Ruby',
   'Express',
+  'Meteor',
+  'JSX',
+  'EJS',
+  'Mongoose',
   'PHP',
   'jQuery',
   'AWS',
+  'Photoshop'
 ];
 
 export default class SkillsTags extends Component {

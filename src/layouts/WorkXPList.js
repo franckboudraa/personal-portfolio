@@ -5,73 +5,61 @@ const works = [
   {
     place: 'OpenClassrooms',
     location: 'Remote',
-    title: 'Full Stack Developer',
+    title: 'Full Stack Student',
     timeline: '2018 - Present',
-    description: `<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+    description: `<p>Developing various web projects to obtain a Bachelor degree</p>
           <ul>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Donec pede justo ante</li>
-            <li>Maecenas tempus tellus eget </li>
+            <li>HTML5, CSS3, Javascript</li>
+            <li>React, UML</li>
+            <li>Ruby on Rails, MySQL</li>
           </ul>`,
   },
-    {
-        place: 'Udemy',
-        location: 'Remote',
-        title: 'Specific courses',
-        timeline: '2017 - Present',
-        description: `<p>Followed multiple courses by Stephen Grider:</p>
-          <ul>
-            <li>Modern React & Redux</li>
-            <li>Node Fullstack (NodeJS, Express, React, MongoDB)</li>
-            <li>Meteor Fullstack with React and MongoDB</li>
-          </ul>`,
-    },
-    {
-        place: 'Rails courses',
-        location: 'Remote',
-        title: 'Autodidact',
-        timeline: '2017',
-        description: `<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-          <ul>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Donec pede justo ante</li>
-            <li>Maecenas tempus tellus eget </li>
-          </ul>`,
-    },
   {
-    place: '',
-    location: 'Paris',
-    title: 'Chef de Partie',
-    timeline: '2014 - 2018',
+    place: 'Events platform',
+    location: 'Paris, France',
+    title: 'Entrepreneurial Project',
+    timeline: '2017 - Present',
+    description: `<p>Personal project initially developed on Ruby on Rails, then refactored - Development in progress</p>
+          <ul>
+            <li>NodeJS</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>React/Redux</li>
+          </ul>`,
+  },
+  {
+    place: 'Games platform 2.0',
+    location: 'Paris, France',
+    title: 'Entrepreneurial Project',
+    timeline: '2012-2014',
+    description: `<p>Online games website, 115k users</p>
+          <ul>
+            <li>PHP5/MySQL/Flash</li>
+            <li>AS/HTML5</li>
+            <li>Facebook API, AWS, Amazon API...</li>
+          </ul>`,
+  },
+  {
+    place: 'Gastronomic restaurants',
+    location: 'Paris, France',
+    title: 'Cooking Career',
+    timeline: '2008 - 2018',
     description: `
-          <ul>
-            <li>2017-2018: <strong>Mandarin Oriental, Paris</strong> <em>(Palace, 2 Michelin's stars chef Thierry Marx)</em></li>
-            <li>2017: 1er Chef de Partie @ <strong>Jean-François Piège</strong> <em>(2 Michelin's stars chef)</em></li>
-            <li>2017: <strong>Shangri-La Paris</strong> <em>(Palace, 3 Michelin's stars chef Christophe Moret)</em></li>
-            <li>2014-2017: <strong>La Grande Epicerie de Paris</strong> <em>(LVMH, "Meilleur Ouvrier de France" chef)</em></li>
-          </ul>`,
+          <ul>        
+            <li>2014-2018: <strong>Chef de Partie & 1er Chef de Partie</strong> <em>(Mandarin Oriental Paris (Palace), Jean-François Piège's (2*), Shangri-La Paris (Palace, 3* chef), La Grande Epicerie de Paris)</em></li>
+            <li>2013-2014: <strong>Demi-Chef de Partie</strong> <em>(Pullman Paris Montparnasse, Le Boeuf sur le Toit)</em></li>
+            <li>2008-2012: <strong>Apprenticeship</strong> <em>(L'Auberge du Petit Pussay, Patrick Pignol (2 Michelin stars chef))</em></li>
+                    </ul>`,
   },
   {
-    place: '',
-    location: 'Paris',
-    title: 'Demi-Chef de Partie',
-    timeline: '2013 - 2014',
-    description: `
-          <ul>
-            <li>2014: <strong>Le Boeuf sur le Toit</strong> <em>(Brasserie)</em></li>
-            <li>2013: <strong>Pullman Paris Montparnasse</strong> <em>(4 stars Hotel)</em></li>
-          </ul>`,
-  },
-  {
-    place: '',
+    place: 'Games platform',
     location: 'France',
-    title: 'Cooking Internship',
-    timeline: '2008 - 2012',
-    description: `
+    title: 'Entrepreneurial Project',
+    timeline: '2005-2008',
+    description: `<p>Online games website</p>
           <ul>
-            <li>2011-2012: <strong>Relais d'Auteuil</strong> <em>(2 Michelin's stars chef Patrick Pignol)</em></li>
-            <li>2010-2011: <strong>Zebra Square</strong> <em>(5 stars Hotel)</em></li>
-            <li>2008-2010: <strong>Auberge du Petit Pussay</strong> <em>(Bistrot)</em></li>
+            <li>PHP4/MySQL/Flash</li>
+            <li>AS</li>
           </ul>`,
   },
 ];

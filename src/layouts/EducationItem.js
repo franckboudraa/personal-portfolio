@@ -10,9 +10,10 @@ export default class EducationItem extends Component {
           <h3 className="degree">{name}</h3>
           <div className="education-body">{school}</div>
           <div className="time">{timeline}</div>
-          <div className="desc">
-            <em>{description}</em>
-          </div>
+          <div
+            className="desc"
+            dangerouslySetInnerHTML={{ __html: '<em>' + description + '</em>' }}
+          />
         </div>
       </div>
     );

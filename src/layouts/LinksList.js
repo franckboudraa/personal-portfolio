@@ -5,7 +5,14 @@ import { connect } from 'react-redux';
 
 import LinksItem from './LinksItem';
 
-const items = ['experiences', 'education', 'skills', 'portfolio', 'contact'];
+const items = [
+  'about',
+  'experiences',
+  'skills',
+  'education',
+  'projects',
+  'contact',
+];
 
 class LinksList extends Component {
   render() {

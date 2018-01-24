@@ -8,7 +8,7 @@ import { faSquare as faStarWhite } from '@fortawesome/fontawesome-free-regular';
 export default class SkillsItem extends Component {
   render() {
     let stars = [];
-    const { rating, name, level } = this.props;
+    const { rating, name, level, description } = this.props;
     const whiteStars = 5 - rating;
 
     for (let i = 0; i < rating; i++) {
@@ -36,11 +36,7 @@ export default class SkillsItem extends Component {
           <h4 className="skill-name">{name}</h4>
           <div className="level">{level}</div>
           {stars}
-          <div className="desc">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient
-          </div>
+          <div className="desc">{description}</div>
         </div>
       </div>
     );
@@ -50,5 +46,6 @@ export default class SkillsItem extends Component {
 SkillsItem.propTypes = {
   rating: PropTypes.number,
   name: PropTypes.string,
-  level: PropTypes.string
+  level: PropTypes.string,
+  description: PropTypes.string,
 };

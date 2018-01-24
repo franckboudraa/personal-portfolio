@@ -28,7 +28,7 @@ class ContactForm extends Component {
 
   handleSubmit = () => {
     const { email, message } = this.state.input;
-    if(email.length < 12 || message.length < 12){
+    if (email.length < 12 || message.length < 12) {
       return;
     }
     this.props.sendEmail(email, message);
@@ -36,12 +36,25 @@ class ContactForm extends Component {
 
   renderForm = () => {
     if (this.props.loading === 'loading') {
-      return <div className="text-center"><img src={spinner} alt="Spinner" /></div>;
+      return (
+        <div className="text-center">
+          <img src={spinner} alt="Spinner" />
+        </div>
+      );
     } else if (this.props.loading === 'ended') {
       if (this.props.success === true) {
-        return <Alert color="success" className="text-center">Your message has been sent! Thank you!</Alert>;
+        return (
+          <Alert color="success" className="text-center">
+            <strong>Your message has been sent! Thank you!</strong>
+            <br />I'll get back to you shortly!
+          </Alert>
+        );
       } else {
-        return <Alert color="danger" className="text-center">An error occurred, please try again.</Alert>;
+        return (
+          <Alert color="danger" className="text-center">
+            An error occurred, please try again.
+          </Alert>
+        );
       }
     } else {
       return (

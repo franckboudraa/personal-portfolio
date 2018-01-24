@@ -4,7 +4,7 @@ import topButtonReducer from './topButtonReducer';
 import contactReducer from './contactReducer';
 
 export default combineReducers({
-  url:urlReducer,
-  topButton:topButtonReducer,
-  contact:contactReducer
+  url: urlReducer,
+  topButton: topButtonReducer,
+  contact: contactReducer,
 });

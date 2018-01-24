@@ -24,14 +24,16 @@ import LinksList from './LinksList';
 class Header extends Component {
   componentDidMount = () => {
     switch (this.props.history.location.pathname) {
+      case '/about':
+        return this.changeUrlTo('about');
       case '/education':
         return this.changeUrlTo('education');
       case '/experiences':
         return this.changeUrlTo('experiences');
       case '/skills':
         return this.changeUrlTo('skills');
-      case '/portfolio':
-        return this.changeUrlTo('portfolio');
+      case '/projects':
+        return this.changeUrlTo('projects');
       case '/contact':
         return this.changeUrlTo('contact');
       default:
@@ -43,7 +45,7 @@ class Header extends Component {
     scroller.scrollTo(url, {
       duration: 1000,
       smooth: true,
-      offset: -50,
+      offset: -80,
     });
   };
 
@@ -70,7 +72,7 @@ class Header extends Component {
               to="contact"
               spy={false}
               smooth={true}
-              offset={-50}
+              offset={-80}
               duration={1000}
               onSetActive={this.handleSetActive}
             >
@@ -96,15 +98,14 @@ class Header extends Component {
             <div className="profile">
               <p>
                 Currently following the Full Stack Developer path @
-                OpenClassrooms.
+                OpenClassrooms
               </p>
               <p>
-                Available for hire.<br />
                 <FontAwesomeIcon
                   icon={faMapMarkerAlt}
-                  style={{ marginRight: '5px' }}
-                />{' '}
-                Paris
+                  style={{ marginRight: '10px' }}
+                />
+                Paris, France
               </p>
             </div>
           </div>

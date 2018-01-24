@@ -14,9 +14,10 @@ export const checkTopButton = status => dispatch => {
 export const sendEmail = (emailFrom, message) => async dispatch => {
   let loading = 'loading';
   let success = false;
-  let status = {loading, success};
+  let status = { loading, success };
   dispatch({ type: SEND_EMAIL, payload: status });
   try {
+    // eslint-disable-next-line
     const submitForm = await axios.post(
       'https://formspree.io/franckboudraa@gmail.com',
       {
@@ -32,12 +33,12 @@ export const sendEmail = (emailFrom, message) => async dispatch => {
 
     success = true;
     loading = 'ended';
-    status = {loading, success};
+    status = { loading, success };
   } catch (error) {
     //console.log(error);
     success = false;
     loading = 'ended';
-    status = {loading, success};
+    status = { loading, success };
   }
   dispatch({ type: SEND_EMAIL, payload: status });
 };

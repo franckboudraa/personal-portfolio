@@ -37,7 +37,7 @@ class LinksItem extends Component {
           to={this.props.section}
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={-80}
           duration={1000}
           onSetActive={this.handleActive}
         >

@@ -408,7 +408,7 @@ a.btn:hover {
 .education-section .desc {
   color: #666;
 }
-.skills-section .subtitle {
+.subtitle {
   font-size: 18px;
   color: #8a8a8a;
   margin-top: 0;
@@ -565,7 +565,7 @@ a.btn:hover {
   margin-bottom: 0;
 }
 .portfolio-section .item-inner {
-  height:100%;
+  height: 100%;
   background: #607d8b;
   color: #fff;
   -webkit-border-radius: 2px;
@@ -581,13 +581,32 @@ a.btn:hover {
   -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 }
-.portfolio-section .item-inner:hover {
-  background: #648291;
+.overlay {
+  height: 100%;
+}
+.portfolio-section .item-inner:hover .overlay {
+  display: block;
+  background: rgba(255, 255, 255, 0.9);
+  transition: background 0.3s ease;
+}
+.portfolio-section .item-inner:hover .btn {
+  position: relative;
+  opacity: 1;
+  z-index: 2;
 }
 .portfolio-section .item-inner:hover img {
-  -webkit-opacity: 0.9;
-  -moz-opacity: 0.9;
-  opacity: 0.9;
+  -webkit-opacity: 0.2;
+  -moz-opacity: 0.2;
+  opacity: 0.2;
+  transition: opacity 0.3s ease;
+}
+.portfolio-section .btn-grp {
+  position: absolute;
+}
+.portfolio-section .btn {
+  position: relative;
+  opacity: 0;
+  z-index: 2;
 }
 .portfolio-section .item-inner .content {
   padding: 30px;

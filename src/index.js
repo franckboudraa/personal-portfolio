@@ -17,11 +17,16 @@ const history = createHistory();
 
 // Build the middleware for intercepting and dispatching navigation actions
 const middleware = routerMiddleware(history);
-const store = createStore(reducers, {}, applyMiddleware(reduxThunk, middleware));
+const store = createStore(
+  reducers,
+  {},
+  applyMiddleware(reduxThunk, middleware),
+);
 
-ReactDOM.render((
+ReactDOM.render(
   <Provider store={store}>
-    <App history={history}/>
-  </Provider>
-), document.getElementById('root'));
+    <App history={history} />
+  </Provider>,
+  document.getElementById('root'),
+);
 registerServiceWorker();
