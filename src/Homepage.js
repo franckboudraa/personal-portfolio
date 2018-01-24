@@ -2,18 +2,6 @@ import React, { Component } from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/fontawesome-free-solid';
 
-/*import reactImg from './img/react.png';
-import meteorImg from './img/meteor.png';
-import nodeImg from './img/node.png';
-import mongoImg from './img/mongodb.png';
-import rubyImg from './img/ruby.png';
-import railsImg from './img/rails.png';
-import mysqlImg from './img/mysql.png';
-import expressImg from './img/expressjs.png';
-import htmlImg from './img/html5.png';
-import cssImg from './img/css3.png';
-import jsImg from './img/javascript.jpeg';*/
-
 import pic from './img/pic.jpg';
 import SocialLinks from './layouts/SocialLinks';
 import WorkXPList from './layouts/WorkXPList';
@@ -24,12 +12,6 @@ import PortfolioList from './layouts/PortfolioList';
 import ContactComponent from './layouts/ContactComponent';
 
 export default class Homepage extends Component {
-  constructor(props) {
-    super(props);
-
-    document.title = `Home - Franck's portfolio`;
-  }
-
   render() {
     return (
       <div className="wrapper container">

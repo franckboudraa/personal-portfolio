@@ -3,32 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="47586044-712c-4c29-9a97-0532f82ee92c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change beforePath="$PROJECT_DIR$/src/Homepage.js" afterPath="$PROJECT_DIR$/src/Homepage.js" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.js" afterPath="$PROJECT_DIR$/src/actions/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/actions/types.js" afterPath="$PROJECT_DIR$/src/actions/types.js" />
-      <change beforePath="$PROJECT_DIR$/src/css/styles.css" afterPath="$PROJECT_DIR$/src/css/styles.css" />
-      <change beforePath="$PROJECT_DIR$/src/img/brooklyn.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/img/brooklyn2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/ContactComponent.js" afterPath="$PROJECT_DIR$/src/layouts/ContactComponent.js" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/ContactForm.js" afterPath="$PROJECT_DIR$/src/layouts/ContactForm.js" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/EducationItem.js" afterPath="$PROJECT_DIR$/src/layouts/EducationItem.js" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/EducationList.js" afterPath="$PROJECT_DIR$/src/layouts/EducationList.js" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Header.js" afterPath="$PROJECT_DIR$/src/layouts/Header.js" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/LinksItem.js" afterPath="$PROJECT_DIR$/src/layouts/LinksItem.js" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/LinksList.js" afterPath="$PROJECT_DIR$/src/layouts/LinksList.js" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/PortfolioItem.js" afterPath="$PROJECT_DIR$/src/layouts/PortfolioItem.js" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/PortfolioList.js" afterPath="$PROJECT_DIR$/src/layouts/PortfolioList.js" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/SkillsItem.js" afterPath="$PROJECT_DIR$/src/layouts/SkillsItem.js" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/SkillsList.js" afterPath="$PROJECT_DIR$/src/layouts/SkillsList.js" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/SkillsTags.js" afterPath="$PROJECT_DIR$/src/layouts/SkillsTags.js" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/WorkXPList.js" afterPath="$PROJECT_DIR$/src/layouts/WorkXPList.js" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/contactReducer.js" afterPath="$PROJECT_DIR$/src/reducers/contactReducer.js" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" afterPath="$PROJECT_DIR$/src/reducers/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/topButtonReducer.js" afterPath="$PROJECT_DIR$/src/reducers/topButtonReducer.js" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/urlReducer.js" afterPath="$PROJECT_DIR$/src/reducers/urlReducer.js" />
-      <change beforePath="$PROJECT_DIR$/src/registerServiceWorker.js" afterPath="$PROJECT_DIR$/src/registerServiceWorker.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -232,17 +206,17 @@
       <workItem from="1516611812183" duration="25310000" />
       <workItem from="1516649078930" duration="1364000" />
       <workItem from="1516654413324" duration="2848000" />
-      <workItem from="1516811571611" duration="4456000" />
+      <workItem from="1516811571611" duration="4500000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96780000" />
+    <option name="totallyTimeSpent" value="96824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="992" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15388711" sideWeight="0.49033818" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15388711" sideWeight="0.49033818" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -251,7 +225,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13199106" sideWeight="0.50966185" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20624304" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20624304" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -359,7 +333,7 @@
         <state relative-caret-position="246">
           <caret line="51" column="2" lean-forward="true" selection-start-line="51" selection-start-column="2" selection-end-line="51" selection-end-column="2" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -401,7 +375,7 @@
         <state relative-caret-position="337">
           <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -411,7 +385,7 @@
         <state relative-caret-position="378">
           <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -523,7 +497,7 @@
         <state relative-caret-position="1026">
           <caret line="57" column="19" lean-forward="true" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -551,7 +525,7 @@
         <state relative-caret-position="396">
           <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -569,7 +543,7 @@
         <state relative-caret-position="18">
           <caret line="1" column="35" lean-forward="false" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
