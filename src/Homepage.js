@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { Container } from 'reactstrap';
+
 import About from './components/About/About';
 import Experiences from './components/Experiences/Experiences';
 import Skills from './components/Skills/Skills';
@@ -10,14 +12,14 @@ import Contact from './components/Contact/Contact';
 export default class Homepage extends Component {
   render() {
     return (
-      <div className="wrapper container">
+      <Container className="wrapper">
         <About />
         <Experiences />
         <Skills />
         <Education />
         <Portfolio />
         <Contact />
-      </div>
+      </Container>
     );
   }
 }
