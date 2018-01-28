@@ -72,7 +72,7 @@ class ExperiencesList extends Component {
           <ExperiencesItem
             place={place}
             location={location}
-            key={title}
+            key={place}
             title={title}
             timeline={timeline}
             description={description}
