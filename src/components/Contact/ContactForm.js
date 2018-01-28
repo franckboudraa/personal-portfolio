@@ -13,16 +13,27 @@ class ContactForm extends Component {
     this.state = {
       input: {
         email: '',
-        message: ''
+        message: '',
+        emailStatus: '',
+        messageStatus: ''
       }
     };
   }
 
   handleChange = ({ target }) => {
     const { name, value } = target;
+    const status = name + 'Status';
+    let statusState;
+    if (name === 'email' && value.length < 6) {
+      statusState = false;
+    } else if (name === 'message' && value.length < 12) {
+      statusState = false;
+    } else {
+      statusState = true;
+    }
     this.setState(prevState => {
       prevState.input[name] = value;
-      return { input: prevState.input };
+      return { input: prevState.input, [status]: statusState };
     });
   };
 
@@ -71,6 +82,7 @@ class ContactForm extends Component {
                 placeholder="Your email"
                 value={this.state.input.email}
                 onChange={this.handleChange}
+                valid={this.state.emailStatus}
                 required
               />
             </Col>
@@ -89,6 +101,7 @@ class ContactForm extends Component {
                 placeholder="Your message"
                 value={this.state.input.message}
                 onChange={this.handleChange}
+                valid={this.state.messageStatus}
                 required
               />
             </Col>
