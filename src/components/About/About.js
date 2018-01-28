@@ -12,10 +12,7 @@ class About extends Component {
             cook in the high-end gastronomy!
           </h5>
           <h5 className="subtitle">
-            Love pugs!
-            <small>
-              <em>-not the library, I prefer JSX! :)</em>
-            </small>
+            Love pugs! <em>Not the library, I prefer JSX! :)</em>
           </h5>
         </div>
       </section>
