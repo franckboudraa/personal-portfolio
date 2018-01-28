@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import WorkXPItem from './WorkXPItem';
+import ExperiencesItem from './ExperiencesItem';
 
 const works = [
   {
@@ -12,7 +12,7 @@ const works = [
             <li>HTML5, CSS3, Javascript</li>
             <li>React, UML</li>
             <li>Ruby on Rails, MySQL</li>
-          </ul>`,
+          </ul>`
   },
   {
     place: 'Events platform',
@@ -25,7 +25,7 @@ const works = [
             <li>Express</li>
             <li>MongoDB</li>
             <li>React/Redux</li>
-          </ul>`,
+          </ul>`
   },
   {
     place: 'Games platform 2.0',
@@ -37,7 +37,7 @@ const works = [
             <li>PHP5/MySQL/Flash</li>
             <li>AS/HTML5</li>
             <li>Facebook API, AWS, Amazon API...</li>
-          </ul>`,
+          </ul>`
   },
   {
     place: 'Gastronomic restaurants',
@@ -49,7 +49,7 @@ const works = [
             <li>2014-2018: <strong>Chef de Partie & 1er Chef de Partie</strong> <em>(Mandarin Oriental Paris (Palace), Jean-François Piège's (2*), Shangri-La Paris (Palace, 3* chef), La Grande Epicerie de Paris)</em></li>
             <li>2013-2014: <strong>Demi-Chef de Partie</strong> <em>(Pullman Paris Montparnasse, Le Boeuf sur le Toit)</em></li>
             <li>2008-2012: <strong>Apprenticeship</strong> <em>(L'Auberge du Petit Pussay, Patrick Pignol (2 Michelin stars chef))</em></li>
-                    </ul>`,
+                    </ul>`
   },
   {
     place: 'Games platform',
@@ -60,16 +60,16 @@ const works = [
           <ul>
             <li>PHP4/MySQL/Flash</li>
             <li>AS</li>
-          </ul>`,
-  },
+          </ul>`
+  }
 ];
 
-class WorkXPList extends Component {
+class ExperiencesList extends Component {
   render() {
     const renderItems = works.map(
       ({ place, location, title, timeline, description }) => {
         return (
-          <WorkXPItem
+          <ExperiencesItem
             place={place}
             location={location}
             key={title}
@@ -78,10 +78,10 @@ class WorkXPList extends Component {
             description={description}
           />
         );
-      },
+      }
     );
     return <div>{renderItems}</div>;
   }
 }
 
-export default WorkXPList;
+export default ExperiencesList;

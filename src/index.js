@@ -20,13 +20,13 @@ const middleware = routerMiddleware(history);
 const store = createStore(
   reducers,
   {},
-  applyMiddleware(reduxThunk, middleware),
+  applyMiddleware(reduxThunk, middleware)
 );
 
 ReactDOM.render(
   <Provider store={store}>
     <App history={history} />
   </Provider>,
-  document.getElementById('root'),
+  document.getElementById('root')
 );
 registerServiceWorker();

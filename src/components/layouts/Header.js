@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { setUrl, checkTopButton } from '../actions';
+import { setUrl, checkTopButton } from '../../actions';
 
 import { Link, scroller } from 'react-scroll';
 
@@ -12,11 +12,11 @@ import Sticky from 'react-stickynode';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import {
   faPaperPlane,
-  faMapMarkerAlt,
+  faMapMarkerAlt
 } from '@fortawesome/fontawesome-free-solid';
 
-import '../css/styles.css';
-import pic from '../img/pic.jpg';
+import '../../css/styles.css';
+import pic from '../../img/pic.jpg';
 
 import SocialLinks from './SocialLinks';
 import LinksList from './LinksList';
@@ -45,7 +45,7 @@ class Header extends Component {
     scroller.scrollTo(url, {
       duration: 1000,
       smooth: true,
-      offset: -80,
+      offset: -80
     });
   };
 
@@ -134,11 +134,11 @@ function mapStateToProps({ topButton }) {
 }
 
 export default withRouter(
-  connect(mapStateToProps, { setUrl, checkTopButton })(Header),
+  connect(mapStateToProps, { setUrl, checkTopButton })(Header)
 );
 
 Header.propTypes = {
   history: PropTypes.object,
   setUrl: PropTypes.func,
-  checkTopButton: PropTypes.func,
+  checkTopButton: PropTypes.func
 };

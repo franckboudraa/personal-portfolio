@@ -7,7 +7,7 @@ import { Link } from 'react-scroll';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faAngleUp } from '@fortawesome/fontawesome-free-solid';
 
-import { setUrl } from '../actions';
+import { setUrl } from '../../actions';
 
 class LinksItem extends Component {
   handleActive = () => {
@@ -52,5 +52,5 @@ export default connect(null, { setUrl })(LinksItem);
 
 LinksItem.propTypes = {
   section: PropTypes.string,
-  setUrl: PropTypes.func,
+  setUrl: PropTypes.func
 };

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PortfolioItem from './PortfolioItem';
 
-import brooklyn from '../img/brooklyn3.jpg';
-import portfolio from '../img/portfolio.jpg';
+import brooklyn from '../../img/brooklyn3.jpg';
+import portfolio from '../../img/portfolio.jpg';
 
 const items = [
   {
@@ -12,7 +12,7 @@ const items = [
     projectUrl: 'http://www.franckboudraa.me/oc-brooklyn-festival',
     stack: ['HTML5, CSS3', 'JS', 'Bootstrap 4', 'jQuery', 'Google Maps API'],
     description: '',
-    image: brooklyn,
+    image: brooklyn
   },
   {
     name: 'Personal Portfolio',
@@ -21,8 +21,8 @@ const items = [
     projectUrl: 'http://www.franckboudraa.me',
     stack: ['HTML5, CSS3', 'JS', 'Bootstrap 4', 'React', 'Redux'],
     description: '',
-    image: portfolio,
-  },
+    image: portfolio
+  }
 ];
 
 class PortfolioList extends Component {
@@ -41,7 +41,7 @@ class PortfolioList extends Component {
             key={name}
           />
         );
-      },
+      }
     );
     return <div className="items-wrapper row">{renderItems}</div>;
   }

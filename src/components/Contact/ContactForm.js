@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 
 import { Alert, Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
-import { sendEmail } from '../actions';
+import { sendEmail } from '../../actions';
 
-import spinner from '../img/spinner.gif';
+import spinner from '../../img/spinner.gif';
 
 class ContactForm extends Component {
   constructor(props) {
@@ -13,8 +13,8 @@ class ContactForm extends Component {
     this.state = {
       input: {
         email: '',
-        message: '',
-      },
+        message: ''
+      }
     };
   }
 
