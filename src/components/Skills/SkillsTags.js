@@ -5,15 +5,8 @@ const skills = [
   'CSS3',
   'Git',
   'Bootstrap',
-  'Ruby',
-  'Express',
-  'Meteor',
-  'JSX',
-  'EJS',
-  'Mongoose',
   'PHP',
-  'jQuery',
-  'AWS',
+  'REST',
   'Photoshop'
 ];
 

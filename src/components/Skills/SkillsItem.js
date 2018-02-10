@@ -17,7 +17,7 @@ export default class SkillsItem extends Component {
           icon={faStar}
           className="starred mr-1"
           key={'full' + i}
-        />,
+        />
       );
     }
     for (let i = 0; i < whiteStars; i++) {
@@ -26,17 +26,20 @@ export default class SkillsItem extends Component {
           icon={faStarWhite}
           className="starred mr-1"
           key={'white' + i}
-        />,
+        />
       );
     }
 
     return (
-      <div className="item col-12 col-md-4 mb-5">
+      <div className="item col-12 col-md-3 mb-5">
         <div className="item-inner">
           <h4 className="skill-name">{name}</h4>
           <div className="level">{level}</div>
           {stars}
-          <div className="desc">{description}</div>
+          <div
+            className="desc"
+            dangerouslySetInnerHTML={{ __html: description }}
+          />
         </div>
       </div>
     );
@@ -47,5 +50,5 @@ SkillsItem.propTypes = {
   rating: PropTypes.number,
   name: PropTypes.string,
   level: PropTypes.string,
-  description: PropTypes.string,
+  description: PropTypes.string
 };
