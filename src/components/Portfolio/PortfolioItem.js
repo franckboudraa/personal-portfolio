@@ -7,6 +7,7 @@ class PortfolioItem extends Component {
       name,
       context,
       githubUrl,
+      githubLink,
       stack,
       image,
       projectUrl,
@@ -22,14 +23,14 @@ class PortfolioItem extends Component {
         <div className="item-inner">
           <div className="overlay">
             <div className="action text-center">
-              <div className="btn-grp" style={{ top: '35%', left: '30%' }}>
+              <div className="btn-grp" style={{ top: '35%', left: '27%' }}>
                 <a
                   href={githubUrl}
                   target="_blank"
                   rel="noreferrer noopener"
                   className="btn mb-1"
                 >
-                  View on Github
+                  {githubLink}
                 </a>
                 <br />
                 <a
@@ -49,7 +50,8 @@ class PortfolioItem extends Component {
               <h3 className="sub-title">{name}</h3>
               <div className="meta">{context}</div>
               <div className="portfolio-body mt-3 mb-1">
-                {description}
+              {description}
+    {(description) ? (<br />) : "" }
                 {stack.join(', ')}
               </div>
             </div>
@@ -66,6 +68,7 @@ PortfolioItem.propTypes = {
   name: PropTypes.string,
   context: PropTypes.string,
   githubUrl: PropTypes.string,
+  githubLink: PropTypes.string,
   projectUrl: PropTypes.string,
   stack: PropTypes.array,
   image: PropTypes.string,

@@ -38,7 +38,7 @@ const degrees = [
     school: 'Udemy',
     timeline: '2017-Present',
     description:
-      '<ul class="pl-0"><li>ES6 Javascript: The Complete Developer\'s Guide</li><li>Node with React: Fullstack development (Express, MongoDB)</li><li>Meteor and React for Realtime Apps</li><li>Modern React with Redux</li></ul>',
+      '<ul class="pl-0"><li>Node with React: Fullstack development (Express, MongoDB)</li><li>Meteor and React for Realtime Apps</li><li>Modern React with Redux</li><li>...</li></ul><a href="https://www.udemy.com/user/franck-boudraa" target="_blank" rel="noopener noreferrer">Click to view full list</a>',
     degree: false,
   },
   {

@@ -35,7 +35,8 @@ const works = [
     description: `<p>Online games website, 115k users</p>
           <ul>
             <li>PHP5/MySQL/Flash</li>
-            <li>AS/HTML5</li>
+            <li>AS3/HTML5</li>
+            <li>Memcached, DevOps...</li>
             <li>Facebook API, AWS, Amazon API...</li>
           </ul>`
   },
@@ -56,10 +57,10 @@ const works = [
     location: 'France',
     title: 'Entrepreneurial Project',
     timeline: '2005-2008',
-    description: `<p>Online games website</p>
+    description: `<p>Online games website, 80k users</p>
           <ul>
-            <li>PHP4/MySQL/Flash</li>
-            <li>AS</li>
+            <li>PHP4/MySQL/Flash/AS2</li>
+            <li>Amazon API</li>
           </ul>`
   }
 ];

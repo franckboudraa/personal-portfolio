@@ -3,37 +3,62 @@ import PortfolioItem from './PortfolioItem';
 
 import brooklyn from '../../img/brooklyn3.jpg';
 import portfolio from '../../img/portfolio.jpg';
+import wondyland from '../../img/wondyland.jpg';
+import monsterwin from '../../img/monsterwin.jpg';
 
 const items = [
   {
+    name: 'Personal Portfolio',
+    context: 'Single Page App (2018)',
+    githubUrl: 'https://github.com/franckboudraa/personal-portfolio',
+    githubLink: 'View on Github',
+    projectUrl: 'http://www.franckboudraa.me',
+    stack: ['HTML5, CSS3', 'JS', 'Bootstrap 4', 'React', 'Redux', 'React Router 4'],
+    description: '',
+    image: portfolio,
+  },
+  {
     name: 'Brooklyn Outdoor Film Festival',
-    context: 'Mockup website for OC Full Stack Developer Path',
+    context: 'Mockup website for OC Full Stack Developer Path (2018)',
     githubUrl: 'https://github.com/franckboudraa/oc-brooklyn-festival',
+    githubLink: 'View on Github',
     projectUrl: 'http://www.franckboudraa.me/oc-brooklyn-festival',
     stack: ['HTML5, CSS3', 'JS', 'Bootstrap 4', 'jQuery', 'Google Maps API'],
-    description: '',
+    description: '2018',
     image: brooklyn
   },
   {
-    name: 'Personal Portfolio',
-    context: 'Single Page App',
-    githubUrl: 'https://github.com/franckboudraa/personal-portfolio',
-    projectUrl: 'http://www.franckboudraa.me',
-    stack: ['HTML5, CSS3', 'JS', 'Bootstrap 4', 'React', 'Redux'],
-    description: '',
-    image: portfolio
+    name: 'Games Platform #2',
+    context: 'Entrepreneurial Project (2012-2014)',
+    githubUrl: null,
+    githubLink: 'No Github sorry',
+    projectUrl: 'https://web.archive.org/web/20141102111929/http://www.monsterwin.fr:80/',
+    stack: ['HTML5', 'CSS', 'JS', 'jQuery', 'Bootstrap ', 'PHP5', 'MySQL', 'Flash/AS3', 'Memcached', 'Amazon/Facebook API', 'AWS', 'DevOps'],
+    description: '(115k users)',
+    image: monsterwin
+  },
+  {
+    name: 'Games Platform #1',
+    context: 'Online games platform (2005-2008)',
+    githubUrl: null,
+    githubLink: 'No Github in 2008',
+    projectUrl: 'https://web.archive.org/web/20071104134523/http://www.wondyland.com:80/index.php',
+    stack: ['HTML, CSS', 'JS', 'PHP4', 'MySQL', 'Flash/AS2', 'Amazon API'],
+    description: '(80k users)',
+    image: wondyland
   }
 ];
 
 class PortfolioList extends Component {
   render() {
     const renderItems = items.map(
-      ({ name, context, githubUrl, stack, image, projectUrl, description }) => {
+      ({ name, context, githubUrl, githubLink, stack, image, projectUrl, description }) => {
         return (
           <PortfolioItem
             name={name}
             context={context}
             githubUrl={githubUrl}
+            githubLink={githubLink}
             projectUrl={projectUrl}
             stack={stack}
             image={image}
