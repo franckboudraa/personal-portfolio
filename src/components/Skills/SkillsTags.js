@@ -5,6 +5,7 @@ const skills = [
   'CSS3',
   'Git',
   'Bootstrap',
+  'Memcached',
   'PHP',
   'REST',
   'Photoshop'
