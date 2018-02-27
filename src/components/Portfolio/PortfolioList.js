@@ -5,26 +5,55 @@ import brooklyn from '../../img/brooklyn3.jpg';
 import portfolio from '../../img/portfolio.jpg';
 import wondyland from '../../img/wondyland.jpg';
 import monsterwin from '../../img/monsterwin.jpg';
+import movegroove from '../../img/movegroove.jpg';
 
 const items = [
+  {
+    name: 'Move&Groove Fitness',
+    context: 'Rails project for OC Fullstack path (2018)',
+    githubUrl: 'https://github.com/franckboudraa/oc-movegroove',
+    githubLink: 'View on Github',
+    projectUrl: 'https://movegroove.herokuapp.com',
+    stack: [
+      'HTML5',
+      'CSS3',
+      'JS',
+      'Ruby on Rails',
+      'PostgreSQL',
+      'Bootstrap 4',
+      'Devise',
+      'Facebook OAuth',
+      'Sendgrid API'
+    ],
+    description: '',
+    image: movegroove
+  },
   {
     name: 'Personal Portfolio',
     context: 'Single Page App (2018)',
     githubUrl: 'https://github.com/franckboudraa/personal-portfolio',
     githubLink: 'View on Github',
     projectUrl: 'http://www.franckboudraa.me',
-    stack: ['HTML5, CSS3', 'JS', 'Bootstrap 4', 'React', 'Redux', 'React Router 4'],
+    stack: [
+      'HTML5, CSS3',
+      'JS',
+      'Bootstrap 4',
+      'React',
+      'Redux',
+      'React Router 4',
+      'Formspree API'
+    ],
     description: '',
-    image: portfolio,
+    image: portfolio
   },
   {
     name: 'Brooklyn Outdoor Film Festival',
-    context: 'Mockup website for OC Full Stack Developer Path (2018)',
+    context: 'Mockup website for OC Fullstack path (2018)',
     githubUrl: 'https://github.com/franckboudraa/oc-brooklyn-festival',
     githubLink: 'View on Github',
     projectUrl: 'http://www.franckboudraa.me/oc-brooklyn-festival',
     stack: ['HTML5, CSS3', 'JS', 'Bootstrap 4', 'jQuery', 'Google Maps API'],
-    description: '2018',
+    description: '',
     image: brooklyn
   },
   {
@@ -32,8 +61,22 @@ const items = [
     context: 'Entrepreneurial Project (2012-2014)',
     githubUrl: null,
     githubLink: 'No Github sorry',
-    projectUrl: 'https://web.archive.org/web/20141102111929/http://www.monsterwin.fr:80/',
-    stack: ['HTML5', 'CSS', 'JS', 'jQuery', 'Bootstrap ', 'PHP5', 'MySQL', 'Flash/AS3', 'Memcached', 'Amazon/Facebook API', 'AWS', 'DevOps'],
+    projectUrl:
+      'https://web.archive.org/web/20141102111929/http://www.monsterwin.fr:80/',
+    stack: [
+      'HTML5',
+      'CSS',
+      'JS',
+      'jQuery',
+      'Bootstrap ',
+      'PHP5',
+      'MySQL',
+      'Flash/AS3',
+      'Memcached',
+      'Amazon/Facebook API',
+      'AWS',
+      'DevOps'
+    ],
     description: '(115k users)',
     image: monsterwin
   },
@@ -42,7 +85,8 @@ const items = [
     context: 'Online games platform (2005-2008)',
     githubUrl: null,
     githubLink: 'No Github in 2008',
-    projectUrl: 'https://web.archive.org/web/20071104134523/http://www.wondyland.com:80/index.php',
+    projectUrl:
+      'https://web.archive.org/web/20071104134523/http://www.wondyland.com:80/index.php',
     stack: ['HTML, CSS', 'JS', 'PHP4', 'MySQL', 'Flash/AS2', 'Amazon API'],
     description: '(80k users)',
     image: wondyland
@@ -52,7 +96,16 @@ const items = [
 class PortfolioList extends Component {
   render() {
     const renderItems = items.map(
-      ({ name, context, githubUrl, githubLink, stack, image, projectUrl, description }) => {
+      ({
+        name,
+        context,
+        githubUrl,
+        githubLink,
+        stack,
+        image,
+        projectUrl,
+        description
+      }) => {
         return (
           <PortfolioItem
             name={name}
