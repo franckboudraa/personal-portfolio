@@ -15,15 +15,13 @@ const items = [
     githubLink: 'View on Github',
     projectUrl: 'https://movegroove.herokuapp.com',
     stack: [
-      'HTML5',
-      'CSS3',
-      'JS',
       'Ruby on Rails',
       'PostgreSQL',
       'Bootstrap 4',
       'Devise',
       'Facebook OAuth',
-      'Sendgrid API'
+      'Sendgrid API',
+      'Heroku'
     ],
     description: '',
     image: movegroove
@@ -35,8 +33,7 @@ const items = [
     githubLink: 'View on Github',
     projectUrl: 'http://www.franckboudraa.me',
     stack: [
-      'HTML5, CSS3',
-      'JS',
+      'Javascript',
       'Bootstrap 4',
       'React',
       'Redux',
@@ -75,7 +72,7 @@ const items = [
       'Memcached',
       'Amazon/Facebook API',
       'AWS',
-      'DevOps'
+      'OVH Dedicated'
     ],
     description: '(115k users)',
     image: monsterwin
