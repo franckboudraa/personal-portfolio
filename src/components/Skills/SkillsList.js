@@ -69,7 +69,7 @@ const items = [
     name: 'AWS',
     rating: 3,
     level: 'Intermediate',
-    description: 'S3, EC2, SES, CloudFront, Route 53, RDS'
+    description: 'S3, EC2, SES, CloudFront, Route 53, RDS, ElasticBeanstalk'
   }
 ];
 
