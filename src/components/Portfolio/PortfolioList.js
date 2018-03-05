@@ -6,8 +6,26 @@ import portfolio from '../../img/portfolio.jpg';
 import wondyland from '../../img/wondyland.jpg';
 import monsterwin from '../../img/monsterwin.jpg';
 import movegroove from '../../img/movegroove.jpg';
+import catmash from '../../img/catmash.jpg';
 
 const items = [
+  {
+    name: 'Cat Mash',
+    context: 'Demo Application (2018)',
+    githubUrl: 'https://github.com/franckboudraa/catmash-front',
+    githubLink: 'View on Github',
+    projectUrl: 'http://catmash.franckboudraa.me',
+    stack: [
+      'NodeJS',
+      'React',
+      'Semantic UI',
+      'Redis',
+      'AWS (front)',
+      'Heroku (back)'
+    ],
+    description: '',
+    image: catmash
+  },
   {
     name: 'Move&Groove Fitness',
     context: 'Rails project for OC Fullstack path (2018)',
