@@ -11,20 +11,7 @@ const works = [
           <ul>
             <li>HTML5, CSS3, Javascript</li>
             <li>React, UML</li>
-            <li>Ruby on Rails, MySQL</li>
-          </ul>`
-  },
-  {
-    place: 'Events platform',
-    location: 'Paris, France',
-    title: 'Entrepreneurial Project',
-    timeline: '2017 - Present',
-    description: `<p>Personal project initially developed on Ruby on Rails, then refactored - Development in progress</p>
-          <ul>
-            <li>NodeJS</li>
-            <li>Express</li>
-            <li>MongoDB</li>
-            <li>React/Redux</li>
+            <li>Ruby on Rails, SQL</li>
           </ul>`
   },
   {
