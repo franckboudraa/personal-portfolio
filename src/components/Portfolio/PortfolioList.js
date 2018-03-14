@@ -7,8 +7,29 @@ import wondyland from '../../img/wondyland.jpg';
 import monsterwin from '../../img/monsterwin.jpg';
 import movegroove from '../../img/movegroove.jpg';
 import catmash from '../../img/catmash.jpg';
+import bbt from '../../img/bbt.jpg';
 
 const items = [
+  {
+    name: 'Boulder Bike Tour',
+    context: 'Demo Website (2018)',
+    githubUrl: 'https://github.com/franckboudraa/oc-boulderbike-client',
+    githubLink: 'View on Github',
+    projectUrl: 'http://boulderbike.franckboudraa.me',
+    stack: [
+      'React',
+      'Redux',
+      'Semantic UI',
+      'Ruby on Rails',
+      'PostgreSQL',
+      'Flickr API',
+      'Google Maps API',
+      'AWS (front)',
+      'Heroku (back)'
+    ],
+    description: '',
+    image: bbt
+  },
   {
     name: 'Cat Mash',
     context: 'Demo Application (2018)',
