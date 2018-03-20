@@ -24,7 +24,7 @@ const items = [
       'PostgreSQL',
       'Flickr API',
       'Google Maps API',
-      'AWS (front)',
+      'AWS S3, RDS (front, DB)',
       'Heroku (back)'
     ],
     description: '',
@@ -71,14 +71,7 @@ const items = [
     githubUrl: 'https://github.com/franckboudraa/personal-portfolio',
     githubLink: 'View on Github',
     projectUrl: 'http://www.franckboudraa.me',
-    stack: [
-      'Javascript',
-      'Bootstrap 4',
-      'React',
-      'Redux',
-      'React Router 4',
-      'Formspree API'
-    ],
+    stack: ['Javascript', 'React', 'Redux', 'Bootstrap 4', 'Formspree API'],
     description: '',
     image: portfolio
   },
@@ -101,10 +94,10 @@ const items = [
       'https://web.archive.org/web/20141102111929/http://www.monsterwin.fr:80/',
     stack: [
       'HTML5',
-      'CSS',
+      'CSS3',
       'JS',
       'jQuery',
-      'Bootstrap ',
+      'Bootstrap',
       'PHP5',
       'MySQL',
       'Flash/AS3',
