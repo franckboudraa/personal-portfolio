@@ -3,6 +3,18 @@ import ExperiencesItem from './ExperiencesItem';
 
 const works = [
   {
+    place: 'Popchef',
+    location: 'Paris, France',
+    title: 'Full Stack Developer',
+    timeline: '2018 - Present',
+    description: `<p>Directly Responsible Individual of website reconstruction (from scratch)</p>
+          <ul>
+            <li>Javascript, TypeScript</li>
+            <li>React (+Native), GraphQL</li>
+            <li>Docker, Photoshop, etc.</li>
+          </ul>`
+  },
+  {
     place: 'OpenClassrooms',
     location: 'Remote',
     title: 'Full Stack Student',

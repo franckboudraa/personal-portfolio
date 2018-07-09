@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCode,
   faCoffee,
-  faHeart,
+  faHeart
 } from '@fortawesome/fontawesome-free-solid/index';
 
 class Footer extends Component {
@@ -23,7 +23,7 @@ class Footer extends Component {
                 style={{
                   fontWeight: '100',
                   marginLeft: '5px',
-                  marginRight: '5px',
+                  marginRight: '5px'
                 }}
               />
               =
@@ -32,7 +32,7 @@ class Footer extends Component {
                 style={{
                   fontWeight: '100',
                   marginLeft: '5px',
-                  marginRight: '5px',
+                  marginRight: '5px'
                 }}
               />
             </span>

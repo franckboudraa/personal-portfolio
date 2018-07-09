@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquare as faStar } from '@fortawesome/fontawesome-free-solid';
 import { faSquare as faStarWhite } from '@fortawesome/fontawesome-free-regular';
 

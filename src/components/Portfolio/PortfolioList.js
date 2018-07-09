@@ -8,8 +8,29 @@ import monsterwin from '../../img/monsterwin.jpg';
 import movegroove from '../../img/movegroove.jpg';
 import catmash from '../../img/catmash.jpg';
 import bbt from '../../img/bbt.jpg';
+import please from '../../img/please.jpg';
 
 const items = [
+  {
+    name: 'Please',
+    context: 'Demo Website (2018)',
+    githubUrl: 'https://github.com/franckboudraa/oc-please-front',
+    githubLink: 'View on Github',
+    projectUrl: 'http://please.franckboudraa.me',
+    stack: [
+      'React',
+      'Redux',
+      'Semantic UI',
+      'Ruby on Rails',
+      'PostgreSQL',
+      'Google Maps API',
+      'JWT, Geocoder',
+      'AWS S3, RDS (front, DB)',
+      'Heroku (back)'
+    ],
+    description: '',
+    image: please
+  },
   {
     name: 'Boulder Bike Tour',
     context: 'Demo Website (2018)',

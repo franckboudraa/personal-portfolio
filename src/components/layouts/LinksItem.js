@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import { Link } from 'react-scroll';
 
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp } from '@fortawesome/fontawesome-free-solid';
 
 import { setUrl } from '../../actions';
@@ -38,7 +38,7 @@ class LinksItem extends Component {
           spy={true}
           smooth={true}
           offset={-80}
-          duration={1000}
+          duration={180}
           onSetActive={this.handleActive}
         >
           {this.renderLinkTitle()}
@@ -48,7 +48,10 @@ class LinksItem extends Component {
   }
 }
 
-export default connect(null, { setUrl })(LinksItem);
+export default connect(
+  null,
+  { setUrl }
+)(LinksItem);
 
 LinksItem.propTypes = {
   section: PropTypes.string,

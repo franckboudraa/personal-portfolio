@@ -7,7 +7,7 @@ const degrees = [
   {
     name: 'Full Stack Developer Bachelor',
     school: 'OpenClassrooms',
-    timeline: '2018-Present (expected end of 2018)',
+    timeline: '2018',
     description:
       'HTML5, CSS3, Javascript, React, Ruby on Rails, MySQL, UML, Agile workflow',
     degree: true
@@ -37,9 +37,9 @@ const degrees = [
   {
     name: 'Stephen Grider Courses',
     school: 'Udemy',
-    timeline: '2017-Present',
+    timeline: '2017-2018',
     description:
-      '<ul class="pl-0"><li>GraphQL with React</li><li>Advanced React and Redux</li><li>Node with React: Fullstack development (Express, MongoDB)</li><li>Meteor and React for Realtime Apps</li><li>Modern React with Redux</li><li>...</li></ul><a href="https://www.udemy.com/user/franck-boudraa" target="_blank" rel="noopener noreferrer">Click to view full list</a>',
+      '<ul class="pl-0"><li>GraphQL with React</li><li>Advanced React and Redux</li><li>Node with React: Fullstack development (Express, MongoDB)</li><li>Meteor and React for Realtime Apps</li><li>Modern React with Redux</li><li>...</li></ul><a href="https://www.udemy.com/user/franck-boudraa" target="_blank" rel="noopener noreferrer">Click here to view full list</a>',
     degree: false
   },
   {

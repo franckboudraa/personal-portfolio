@@ -4,6 +4,9 @@ const skills = [
   'HTML5',
   'CSS3',
   'Git',
+  'SQL',
+  'MySQL',
+  'PostgreSQL',
   'jQuery',
   'Bootstrap',
   'Semantic UI',
@@ -11,7 +14,9 @@ const skills = [
   'Redis',
   'PHP',
   'REST',
-  'Photoshop'
+  'Photoshop',
+  'SEO',
+  'UI/UX'
 ];
 
 export default class SkillsTags extends Component {

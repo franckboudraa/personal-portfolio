@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/fontawesome-free-solid';
 import pic from '../../img/pic.jpg';
 
@@ -21,25 +21,20 @@ class Contact extends Component {
           />
           <div className="dialog">
             <p>
-              I am currently following the OpenClassrooms Full Stack Developer
-              Path.
-            </p>
-            <p>I am available for hire.</p>
-            <p>
               <strong>My areas of expertise include:</strong>
             </p>
             <ul className="list-unstyled service-list">
               <li>
-                <FontAwesomeIcon icon={faCheck} className="mr-2" /> Full Stack
-                development
+                <FontAwesomeIcon icon={faCheck} className="mr-2" /> Front-end
+                development (<i>React / React Native / GraphQL</i>)
               </li>
               <li>
-                <FontAwesomeIcon icon={faCheck} className="mr-2" /> Front End
-                development with React
+                <FontAwesomeIcon icon={faCheck} className="mr-2" /> Back-end
+                development (<i>NodeJS / GraphQL / SQL / MongoDB</i>)
               </li>
               <li>
-                <FontAwesomeIcon icon={faCheck} className="mr-2" /> Back End
-                development with NodeJS / Ruby on Rails
+                <FontAwesomeIcon icon={faCheck} className="mr-2" /> System
+                administration / UX
               </li>
             </ul>
           </div>
@@ -58,4 +53,7 @@ function mapStateToProps({ contact }) {
   return { contact };
 }
 
-export default connect(mapStateToProps, null)(Contact);
+export default connect(
+  mapStateToProps,
+  null
+)(Contact);

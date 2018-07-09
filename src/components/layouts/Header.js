@@ -1,23 +1,17 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setUrl, checkTopButton } from '../../actions';
-
 import { Link, scroller } from 'react-scroll';
-
 import Sticky from 'react-stickynode';
-
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPaperPlane,
   faMapMarkerAlt
 } from '@fortawesome/fontawesome-free-solid';
-
 import '../../css/styles.css';
 import pic from '../../img/pic.jpg';
-
 import SocialLinks from './SocialLinks';
 import LinksList from './LinksList';
 
@@ -43,7 +37,7 @@ class Header extends Component {
 
   changeUrlTo = url => {
     scroller.scrollTo(url, {
-      duration: 1000,
+      duration: 180,
       smooth: true,
       offset: -80
     });
@@ -73,7 +67,7 @@ class Header extends Component {
               spy={false}
               smooth={true}
               offset={-80}
-              duration={1000}
+              duration={180}
               onSetActive={this.handleSetActive}
             >
               <FontAwesomeIcon
@@ -97,10 +91,6 @@ class Header extends Component {
             <div className="title">Full Stack Developer</div>
             <div className="profile">
               <p>
-                Currently following the Full Stack Developer path @
-                OpenClassrooms
-              </p>
-              <p>
                 <FontAwesomeIcon
                   icon={faMapMarkerAlt}
                   style={{ marginRight: '10px' }}
@@ -113,7 +103,7 @@ class Header extends Component {
 
         <Sticky
           enabled={true}
-          innerZ={1000}
+          innerZ={180}
           onStateChange={this.handleStickyChange}
         >
           <div className="page-nav-space-holder d-none d-md-block">
@@ -134,7 +124,10 @@ function mapStateToProps({ topButton }) {
 }
 
 export default withRouter(
-  connect(mapStateToProps, { setUrl, checkTopButton })(Header)
+  connect(
+    mapStateToProps,
+    { setUrl, checkTopButton }
+  )(Header)
 );
 
 Header.propTypes = {

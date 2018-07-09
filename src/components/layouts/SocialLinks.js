@@ -1,35 +1,35 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faGithub,
   faLinkedinIn,
   faStackOverflow,
-  faTwitter,
+  faTwitter
 } from '@fortawesome/fontawesome-free-brands';
 
 const items = [
   {
     key: 'li',
     icon: faLinkedinIn,
-    url: 'https://linkedin.com/in/franckboudraa',
+    url: 'https://linkedin.com/in/franckboudraa'
   },
   {
     key: 'tw',
     icon: faTwitter,
-    url: 'https://twitter.com/neocydfr',
+    url: 'https://twitter.com/neocydfr'
   },
   {
     key: 'gh',
     icon: faGithub,
-    url: 'https://github.com/franckboudraa',
+    url: 'https://github.com/franckboudraa'
   },
   {
     key: 'so',
     icon: faStackOverflow,
-    url: 'https://stackoverflow.com/users/1527134/neocydfr',
-  },
+    url: 'https://stackoverflow.com/users/1527134/neocydfr'
+  }
 ];
 
 class SocialLinks extends Component {
@@ -49,5 +49,5 @@ class SocialLinks extends Component {
 export default SocialLinks;
 
 SocialLinks.propTypes = {
-  keyPrefix: PropTypes.string,
+  keyPrefix: PropTypes.string
 };
