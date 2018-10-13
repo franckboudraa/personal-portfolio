@@ -9,9 +9,21 @@ const items = [
     description: ``
   },
   {
-    name: 'Javascript',
+    name: 'JavaScript',
     rating: 4,
     level: 'Advanced',
+    description: ``
+  },
+  {
+    name: 'TypeScript',
+    rating: 3,
+    level: 'Intermediate',
+    description: ''
+  },
+  {
+    name: 'NodeJS',
+    rating: 3,
+    level: 'Intermediate',
     description: ``
   },
   {
@@ -32,24 +44,14 @@ const items = [
     level: 'Intermediate',
     description: ''
   },
-  {
-    name: 'TypeScript',
-    rating: 2,
-    level: 'Beginner',
-    description: ''
-  },
+  
   {
     name: 'MongoDB',
     rating: 2,
     level: 'Beginner',
     description: ''
   },
-  {
-    name: 'Docker',
-    rating: 1,
-    level: 'Beginner',
-    description: ''
-  }
+  
 ];
 
 export default class SkillsList extends Component {

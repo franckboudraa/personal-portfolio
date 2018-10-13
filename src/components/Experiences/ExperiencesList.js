@@ -7,9 +7,9 @@ const works = [
     location: 'Paris, France',
     title: 'Full Stack Developer',
     timeline: '2018 - Present',
-    description: `<p>Directly Responsible Individual of website reconstruction (from scratch)</p>
+    description: `<p>Responsible of website reconstruction (from scratch) & internal apps/backoffice</p>
           <ul>
-            <li>Javascript, TypeScript</li>
+            <li>Javascript, TypeScript, PostgreSQL</li>
             <li>React (+Native), GraphQL</li>
             <li>Docker, Photoshop, etc.</li>
           </ul>`
@@ -18,10 +18,10 @@ const works = [
     place: 'OpenClassrooms',
     location: 'Remote',
     title: 'Full Stack Student',
-    timeline: '2018 - Present',
+    timeline: '2018 - 2018',
     description: `<p>Developing various web projects to obtain a Bachelor degree</p>
           <ul>
-            <li>HTML5, CSS3, Javascript</li>
+            <li>HTML5, CSS3, JavaScript</li>
             <li>React, UML</li>
             <li>Ruby on Rails, SQL</li>
           </ul>`

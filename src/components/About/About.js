@@ -8,7 +8,7 @@ class About extends Component {
         <div className="dialog">
           <h5 className="subtitle">Hi! I'm Franck!</h5>
           <h5 className="subtitle">
-            I'm 26 and passionate about web development since I'm 13. I have
+            I'm 27 and passionate about web development since I'm 13. I have
             engaged with great enthusiasm into a professional reorientation
             after 10 years as a cook in the high-end gastronomy!<br />
             <br />

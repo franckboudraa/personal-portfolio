@@ -8,7 +8,7 @@ import { faSquare as faStarWhite } from '@fortawesome/fontawesome-free-regular';
 export default class SkillsItem extends Component {
   render() {
     let stars = [];
-    const { rating, name, level, description } = this.props;
+    const { rating, name, description } = this.props;
     const whiteStars = 5 - rating;
 
     for (let i = 0; i < rating; i++) {
@@ -16,7 +16,7 @@ export default class SkillsItem extends Component {
         <FontAwesomeIcon
           icon={faStar}
           className="starred mr-1"
-          key={'full' + i}
+          key={`full${i}`}
         />
       );
     }
@@ -25,7 +25,7 @@ export default class SkillsItem extends Component {
         <FontAwesomeIcon
           icon={faStarWhite}
           className="starred mr-1"
-          key={'white' + i}
+          key={`white${i}`}
         />
       );
     }
@@ -34,7 +34,7 @@ export default class SkillsItem extends Component {
       <div className="item col-12 col-md-3 mb-5">
         <div className="item-inner">
           <h4 className="skill-name">{name}</h4>
-          <div className="level">{level}</div>
+          {/*<div className="level">{level}</div>*/}
           {stars}
           <div
             className="desc"

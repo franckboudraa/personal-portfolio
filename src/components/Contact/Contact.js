@@ -30,7 +30,7 @@ class Contact extends Component {
               </li>
               <li>
                 <FontAwesomeIcon icon={faCheck} className="mr-2" /> Back-end
-                development (<i>NodeJS / GraphQL / SQL / MongoDB</i>)
+                development (<i>NodeJS / TypeScript / GraphQL / SQL / MongoDB</i>)
               </li>
               <li>
                 <FontAwesomeIcon icon={faCheck} className="mr-2" /> System
