@@ -5,8 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faGithub,
   faLinkedinIn,
-  faStackOverflow,
-  faTwitter
+  faStackOverflow
 } from '@fortawesome/fontawesome-free-brands';
 
 const items = [
@@ -14,11 +13,6 @@ const items = [
     key: 'li',
     icon: faLinkedinIn,
     url: 'https://linkedin.com/in/franckboudraa'
-  },
-  {
-    key: 'tw',
-    icon: faTwitter,
-    url: 'https://twitter.com/neocydfr'
   },
   {
     key: 'gh',
