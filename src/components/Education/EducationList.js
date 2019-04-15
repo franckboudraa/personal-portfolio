@@ -27,6 +27,30 @@ const degrees = [
     degree: true
   },
   {
+    name: 'UI/UX Design Specialization',
+    school: 'University of Minnesota',
+    timeline: '2019-current',
+    description:
+      '<ul class="pl-0"><li>Introduction to UI Design</li><li>User Research and Design</li><li>Prototyping and Design</li><li>Evaluating User Interfaces</li></ul>',
+    degree: false
+  },
+  {
+    name: 'Harvard CS50',
+    school: 'Harvard University',
+    timeline: '2018-current',
+    description: `<ul class="pl-0"><li>Binary. ASCII. Algorithms. Pseudocode. Source code. Compiler. Object code. Scratch. Statements. Boolean expressions. Conditions. Loops. Variables. Functions. Arrays. Threads. Events.</li><li>Linux. C. Compiling. Libraries. Types. Standard output.</li><li>
+    Casting. Imprecision. Switches. Scope. Strings. Arrays. Cryptography.</li><li>
+    Command-line arguments. Searching. Sorting. Bubble sort. Selection sort. Insertion sort. O. Ω .Θ. Recursion. Merge Sort.</li><li>
+    Stack. Debugging. File I/O. Hexadecimal. Strings. Pointers. Dynamic memory allocation.</li>
+    <li>Heap. Buffer overflow. Linked lists. Hash tables. Tries. Trees. Stacks. Queues.</li>
+    <li>TCP/IP. HTTP.</li>
+    <li>HTML. CSS. Python.</li>
+   <li>MVC. SQL.</li>
+    <li>JavaScript. Ajax.</li><li>
+    Security. Artificial intelligence.</li>`,
+    degree: false
+  },
+  {
     name: 'Google Front End Developer Scholarship',
     school: 'Google/Udacity',
     timeline: '2017-2018',

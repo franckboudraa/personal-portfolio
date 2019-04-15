@@ -3,27 +3,33 @@ import SkillsItem from './SkillsItem';
 
 const items = [
   {
-    name: 'React',
+    name: 'JavaScript',
     rating: 5,
     level: 'Expert',
     description: ``
   },
   {
-    name: 'JavaScript',
+    name: 'React',
+    rating: 4,
+    level: 'Advanced',
+    description: ``
+  },
+  {
+    name: 'React Native',
     rating: 4,
     level: 'Advanced',
     description: ``
   },
   {
     name: 'TypeScript',
-    rating: 3,
-    level: 'Intermediate',
+    rating: 4,
+    level: 'Advanced',
     description: ''
   },
   {
     name: 'NodeJS',
-    rating: 3,
-    level: 'Intermediate',
+    rating: 4,
+    level: 'Advanced',
     description: ``
   },
   {
@@ -33,25 +39,17 @@ const items = [
     description: ``
   },
   {
-    name: 'NodeJS',
-    rating: 3,
-    level: 'Intermediate',
+    name: 'Docker',
+    rating: 2,
+    level: 'Beginner',
     description: ``
   },
   {
-    name: 'Ruby',
-    rating: 3,
-    level: 'Intermediate',
-    description: ''
-  },
-  
-  {
-    name: 'MongoDB',
+    name: 'Kubernetes',
     rating: 2,
     level: 'Beginner',
     description: ''
-  },
-  
+  }
 ];
 
 export default class SkillsList extends Component {

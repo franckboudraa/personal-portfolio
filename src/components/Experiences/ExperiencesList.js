@@ -3,15 +3,15 @@ import ExperiencesItem from './ExperiencesItem';
 
 const works = [
   {
-    place: 'Popchef',
+    place: 'Popchef.com',
     location: 'Paris, France',
     title: 'Full Stack Developer',
     timeline: '2018 - Present',
-    description: `<p>Responsible of website reconstruction (from scratch) & internal apps/backoffice</p>
+    description: `<p>Front, back & mobile app developer - Won an UX award for Popchef (France "Best checkout")</p>
           <ul>
             <li>Javascript, TypeScript, PostgreSQL</li>
-            <li>React (+Native), GraphQL</li>
-            <li>Docker, Photoshop, etc.</li>
+            <li>React, React Native, GraphQL</li>
+            <li>Docker, Kubernetes, AWS, Photoshop, etc.</li>
           </ul>`
   },
   {
@@ -33,9 +33,9 @@ const works = [
     timeline: '2008 - 2018',
     description: `
           <ul>        
-            <li>2014-2018: <strong>Chef de Partie & 1er Chef de Partie</strong> <em>(Mandarin Oriental Paris (Palace, Thierry Marx 2*), Jean-François Piège's (2*), Shangri-La Paris (Palace, 3* chef), La Grande Epicerie de Paris)</em></li>
+            <li>2014-2018: <strong>Chef de Partie & 1er Chef de Partie</strong> <em>(Mandarin Oriental Paris (Palace, Thierry Marx 2*), Jean-François Piège (2*), Shangri-La Paris (Palace, 3* chef), La Grande Epicerie de Paris)</em></li>
             <li>2013-2014: <strong>Demi-Chef de Partie</strong> <em>(Pullman Paris Montparnasse, Le Boeuf sur le Toit)</em></li>
-            <li>2008-2012: <strong>Apprenticeship</strong> <em>(L'Auberge du Petit Pussay, Patrick Pignol (2 Michelin stars chef))</em></li>
+            <li>2008-2012: <strong>Apprenticeship</strong> <em>(L'Auberge du Petit Pussay, Patrick Pignol (2*))</em></li>
                     </ul>`
   },
   {
@@ -47,7 +47,7 @@ const works = [
           <ul>
             <li>PHP5/MySQL/Flash</li>
             <li>AS3/HTML5</li>
-            <li>Memcached, DevOps...</li>
+            <li>Memcached, Redis...</li>
             <li>Facebook API, AWS, Amazon API...</li>
           </ul>`
   },

@@ -16,7 +16,12 @@ const skills = [
   'REST',
   'Photoshop',
   'SEO',
-  'UI/UX'
+  'UI/UX',
+  'Ruby',
+  'Ruby on Rails',
+  'MongoDB',
+  'Agile',
+  'AWS'
 ];
 
 export default class SkillsTags extends Component {
